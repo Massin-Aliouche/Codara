@@ -1,13 +1,13 @@
 // Site configuration - Personnalise ces informations
 export const siteConfig = {
   // Informations de base
-  name: "WebCraft",
-  title: "WebCraft - Création de Sites Web Professionnels",
+  name: "Codara",
+  title: "Codara - Création de Sites Web Professionnels",
   description: "Je crée des sites web modernes, rapides et sur-mesure pour les entrepreneurs et PME. Transformez votre présence en ligne avec un site qui convertit.",
   
   // Tes coordonnées (à modifier)
   contact: {
-    email: "contact@webcraft.fr",
+    email: "contact@codara.fr",
     phone: "+33 6 12 34 56 78",
     location: "Paris, France",
   },

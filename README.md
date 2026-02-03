@@ -1,4 +1,4 @@
-# WebCraft - Site Vitrine Freelance
+# Codara - Site Vitrine Freelance
 
 Site web professionnel pour présenter tes services de création de sites web.
 
@@ -16,7 +16,7 @@ Site web professionnel pour présenter tes services de création de sites web.
 ```bash
 # Cloner le projet
 git clone <ton-repo>
-cd webcraft-agency
+cd codara
 
 # Installer les dépendances
 npm install
