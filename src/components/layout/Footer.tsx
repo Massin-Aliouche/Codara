@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
 import { siteConfig } from '@/lib/config';
 
 export default function Footer() {
@@ -98,15 +98,6 @@ export default function Footer() {
                 >
                   <Mail className="w-4 h-4" />
                   {siteConfig.contact.email}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`tel:${siteConfig.contact.phone}`}
-                  className="flex items-center gap-2 text-secondary-400 hover:text-white transition-colors"
-                >
-                  <Phone className="w-4 h-4" />
-                  {siteConfig.contact.phone}
                 </a>
               </li>
               <li>

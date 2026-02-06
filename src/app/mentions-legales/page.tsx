@@ -40,7 +40,6 @@ export default function MentionsLegales() {
                   <li>SIRET : [Votre numéro SIRET]</li>
                   <li>Adresse : [Votre adresse]</li>
                   <li>Email : {siteConfig.contact.email}</li>
-                  <li>Téléphone : {siteConfig.contact.phone}</li>
                 </ul>
               </section>
 

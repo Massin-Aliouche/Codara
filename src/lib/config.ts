@@ -7,8 +7,7 @@ export const siteConfig = {
   
   // Tes coordonnées
   contact: {
-    email: "massin.aliouche@gmail.com",
-    phone: "+33 6 00 00 00 00", // À mettre à jour avec ton vrai numéro
+    email: "massin.aliouche.pro@gmail.com",
     location: "France",
   },
   

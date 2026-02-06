@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Send, Mail, Phone, MapPin, Loader2 } from 'lucide-react';
+import { Send, Mail, MapPin, Loader2 } from 'lucide-react';
 import { siteConfig } from '@/lib/config';
 import { Button, Input, Textarea } from '@/components/ui';
 import toast from 'react-hot-toast';
@@ -11,7 +11,6 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
     subject: '',
     message: '',
     budget: '',
@@ -35,7 +34,6 @@ export default function Contact() {
     setFormData({
       name: '',
       email: '',
-      phone: '',
       subject: '',
       message: '',
       budget: '',
@@ -85,22 +83,7 @@ export default function Contact() {
                   </div>
                 </a>
 
-                <a
-                  href={`tel:${siteConfig.contact.phone}`}
-                  className="flex items-center gap-4 p-4 rounded-xl bg-secondary-50 hover:bg-primary-50 transition-colors group"
-                >
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center group-hover:bg-primary-200 transition-colors">
-                    <Phone className="w-5 h-5 text-primary-600" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-secondary-500">Téléphone</p>
-                    <p className="font-medium text-secondary-900">
-                      {siteConfig.contact.phone}
-                    </p>
-                  </div>
-                </a>
-
-                <div className="flex items-center gap-4 p-4 rounded-xl bg-secondary-50">
+<div className="flex items-center gap-4 p-4 rounded-xl bg-secondary-50">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
                     <MapPin className="w-5 h-5 text-primary-600" />
                   </div>
@@ -152,16 +135,7 @@ export default function Contact() {
                 />
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-6 mb-6">
-                <Input
-                  label="Téléphone"
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="06 12 34 56 78"
-                />
+              <div className="mb-6">
                 <div>
                   <label
                     htmlFor="budget"
