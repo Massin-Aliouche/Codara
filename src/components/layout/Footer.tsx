@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
 import { siteConfig } from '@/lib/config';
 
 export default function Footer() {
@@ -30,24 +30,6 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href={siteConfig.socials.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-secondary-400 hover:text-primary-400 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href={siteConfig.socials.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-secondary-400 hover:text-primary-400 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
               </a>
               <a
                 href={siteConfig.socials.github}

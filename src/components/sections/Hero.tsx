@@ -65,18 +65,18 @@ export default function Hero() {
             <div className="mt-10 pt-8 border-t border-secondary-200">
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-8">
                 <div className="text-center sm:text-left">
-                  <p className="text-3xl font-bold text-secondary-900">50+</p>
-                  <p className="text-secondary-500 text-sm">Projets réalisés</p>
+                  <p className="text-3xl font-bold text-secondary-900">24h</p>
+                  <p className="text-secondary-500 text-sm">Temps de réponse</p>
                 </div>
                 <div className="hidden sm:block w-px h-12 bg-secondary-200" />
                 <div className="text-center sm:text-left">
                   <p className="text-3xl font-bold text-secondary-900">100%</p>
-                  <p className="text-secondary-500 text-sm">Clients satisfaits</p>
+                  <p className="text-secondary-500 text-sm">Sur-mesure</p>
                 </div>
                 <div className="hidden sm:block w-px h-12 bg-secondary-200" />
                 <div className="text-center sm:text-left">
-                  <p className="text-3xl font-bold text-secondary-900">5★</p>
-                  <p className="text-secondary-500 text-sm">Note moyenne</p>
+                  <p className="text-3xl font-bold text-secondary-900">490€</p>
+                  <p className="text-secondary-500 text-sm">À partir de</p>
                 </div>
               </div>
             </div>

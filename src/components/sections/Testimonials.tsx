@@ -2,6 +2,11 @@ import { Star, Quote } from 'lucide-react';
 import { testimonials } from '@/lib/config';
 
 export default function Testimonials() {
+  // Ne pas afficher la section si pas de témoignages
+  if (testimonials.length === 0) {
+    return null;
+  }
+
   return (
     <section className="section-padding">
       <div className="container-custom">

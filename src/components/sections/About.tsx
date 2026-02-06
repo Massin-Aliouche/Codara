@@ -5,13 +5,13 @@ export default function About() {
   const highlights = [
     {
       icon: Award,
-      title: '5+ ans d\'expérience',
-      description: 'En développement web et design',
+      title: 'Passionné',
+      description: 'Du code propre et moderne',
     },
     {
       icon: Users,
-      title: '50+ clients',
-      description: 'Accompagnés dans leur projet',
+      title: 'À l\'écoute',
+      description: 'De vos besoins et objectifs',
     },
     {
       icon: Clock,
@@ -82,7 +82,7 @@ export default function About() {
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-secondary-900 mb-6">
               Salut, je suis{' '}
-              <span className="gradient-text">[Ton Prénom]</span> 👋
+              <span className="gradient-text">Massin</span> 👋
             </h2>
             <div className="space-y-4 text-secondary-600 mb-8">
               <p>

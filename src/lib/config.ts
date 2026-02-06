@@ -5,19 +5,17 @@ export const siteConfig = {
   title: "Codara - Création de Sites Web Professionnels",
   description: "Je crée des sites web modernes, rapides et sur-mesure pour les entrepreneurs et PME. Transformez votre présence en ligne avec un site qui convertit.",
   
-  // Tes coordonnées (à modifier)
+  // Tes coordonnées
   contact: {
-    email: "contact@codara.fr",
-    phone: "+33 6 12 34 56 78",
-    location: "Paris, France",
+    email: "massin.aliouche@gmail.com",
+    phone: "+33 6 00 00 00 00", // À mettre à jour avec ton vrai numéro
+    location: "France",
   },
   
-  // Réseaux sociaux (ajoute tes liens)
+  // Réseaux sociaux
   socials: {
-    twitter: "https://twitter.com/tonpseudo",
-    linkedin: "https://linkedin.com/in/tonprofil",
-    instagram: "https://instagram.com/tonpseudo",
-    github: "https://github.com/tonpseudo",
+    linkedin: "https://www.linkedin.com/in/aliouche-massin/",
+    github: "https://github.com/Massin-Aliouche",
   },
   
   // Navigation
@@ -87,147 +85,129 @@ export const services = [
   },
 ];
 
-// Tarifs
+// Tarifs - Prix compétitifs pour freelance
 export const pricing = [
   {
     id: 1,
-    name: "Site Vitrine",
-    description: "Parfait pour présenter votre activité",
-    price: "990",
+    name: "Essentiel",
+    description: "Idéal pour démarrer votre présence en ligne",
+    price: "490",
     priceNote: "à partir de",
     popular: false,
     features: [
-      "1 à 5 pages",
+      "Site one-page moderne",
       "Design responsive",
       "Optimisation SEO de base",
       "Formulaire de contact",
-      "Hébergement 1 an offert",
-      "Livraison sous 2 semaines",
+      "Livraison sous 1 semaine",
+      "1 révision incluse",
     ],
   },
   {
     id: 2,
-    name: "Site Pro",
+    name: "Professionnel",
     description: "Pour une présence en ligne complète",
-    price: "1990",
+    price: "990",
     priceNote: "à partir de",
     popular: true,
     features: [
-      "5 à 10 pages",
+      "Jusqu'à 5 pages",
       "Design premium sur-mesure",
-      "Blog intégré",
       "Optimisation SEO avancée",
       "Intégration réseaux sociaux",
       "Analytics et statistiques",
-      "Formation à la gestion",
-      "Support 3 mois inclus",
+      "Livraison sous 2 semaines",
+      "3 révisions incluses",
+      "Support 1 mois inclus",
     ],
   },
   {
     id: 3,
-    name: "E-commerce",
-    description: "Lancez votre boutique en ligne",
-    price: "2990",
-    priceNote: "à partir de",
+    name: "Sur-mesure",
+    description: "Pour les projets ambitieux",
+    price: "Sur devis",
+    priceNote: "",
     popular: false,
     features: [
-      "Boutique complète",
-      "Jusqu'à 100 produits",
-      "Paiement sécurisé Stripe",
-      "Gestion des commandes",
-      "Emails automatiques",
-      "Dashboard admin",
+      "Nombre de pages illimité",
+      "Fonctionnalités avancées",
+      "E-commerce / Application web",
+      "Intégrations personnalisées",
+      "Design 100% unique",
       "Formation complète",
-      "Support 6 mois inclus",
+      "Révisions illimitées",
+      "Support 3 mois inclus",
     ],
   },
 ];
 
-// Portfolio - Exemples de projets (à remplacer par tes vrais projets)
+// Portfolio - Projets de démonstration (templates et concepts)
 export const portfolio = [
   {
     id: 1,
-    title: "Restaurant Le Gourmet",
+    title: "FitCoach Pro",
     category: "Site Vitrine",
-    description: "Site vitrine élégant pour un restaurant gastronomique parisien avec réservation en ligne.",
-    image: "/images/portfolio/restaurant.jpg",
-    tags: ["Next.js", "TailwindCSS", "Réservation"],
+    description: "Landing page moderne pour un coach sportif avec réservation de séances et présentation des programmes.",
+    image: "/images/portfolio/fitcoach.jpg",
+    tags: ["Next.js", "TailwindCSS", "Calendly"],
     link: "#",
   },
   {
     id: 2,
-    title: "Boutique Mode Éthique",
+    title: "Saveurs & Terroir",
     category: "E-commerce",
-    description: "Boutique en ligne pour une marque de vêtements éco-responsables.",
-    image: "/images/portfolio/boutique.jpg",
-    tags: ["Shopify", "Design", "Paiement"],
+    description: "Boutique en ligne de produits artisanaux locaux avec gestion des commandes et paiement sécurisé.",
+    image: "/images/portfolio/terroir.jpg",
+    tags: ["React", "Stripe", "E-commerce"],
     link: "#",
   },
   {
     id: 3,
-    title: "Cabinet d'Avocats",
+    title: "Studio Créatif",
     category: "Site Vitrine",
-    description: "Site professionnel pour un cabinet d'avocats avec prise de rendez-vous.",
-    image: "/images/portfolio/avocat.jpg",
-    tags: ["WordPress", "SEO", "Contact"],
+    description: "Portfolio élégant pour une agence de design avec galerie de projets et formulaire de contact.",
+    image: "/images/portfolio/studio.jpg",
+    tags: ["Next.js", "Animations", "Portfolio"],
     link: "#",
   },
   {
     id: 4,
-    title: "Application SaaS",
+    title: "TaskFlow",
     category: "Application Web",
-    description: "Plateforme de gestion de projets pour une startup tech.",
-    image: "/images/portfolio/saas.jpg",
-    tags: ["React", "Node.js", "MongoDB"],
+    description: "Application de gestion de tâches collaborative avec tableaux Kanban et suivi en temps réel.",
+    image: "/images/portfolio/taskflow.jpg",
+    tags: ["React", "Node.js", "WebSocket"],
     link: "#",
   },
   {
     id: 5,
-    title: "Coach Sportif",
+    title: "Green Garden",
     category: "Site Vitrine",
-    description: "Site personnel pour un coach sportif avec blog et réservation de séances.",
-    image: "/images/portfolio/coach.jpg",
-    tags: ["Next.js", "Blog", "Calendly"],
+    description: "Site vitrine pour un paysagiste avec galerie de réalisations et demande de devis en ligne.",
+    image: "/images/portfolio/garden.jpg",
+    tags: ["Next.js", "SEO", "Contact"],
     link: "#",
   },
   {
     id: 6,
-    title: "Agence Immobilière",
+    title: "BookMyDoc",
     category: "Application Web",
-    description: "Plateforme de gestion immobilière avec recherche avancée et favoris.",
-    image: "/images/portfolio/immo.jpg",
-    tags: ["React", "API", "Maps"],
+    description: "Plateforme de prise de rendez-vous médicaux avec gestion des disponibilités et rappels automatiques.",
+    image: "/images/portfolio/medical.jpg",
+    tags: ["React", "API", "Notifications"],
     link: "#",
   },
 ];
 
-// Témoignages clients
-export const testimonials = [
-  {
-    id: 1,
-    name: "Marie Dupont",
-    role: "Fondatrice, Boutique Bio",
-    content: "Un travail exceptionnel ! Mon site e-commerce est exactement ce que j'imaginais. Les ventes ont augmenté de 40% depuis le lancement.",
-    avatar: "/images/testimonials/avatar1.jpg",
-    rating: 5,
-  },
-  {
-    id: 2,
-    name: "Pierre Martin",
-    role: "Gérant, Restaurant Le Gourmet",
-    content: "Très professionnel et à l'écoute. Le site reflète parfaitement l'ambiance de notre restaurant. Je recommande vivement !",
-    avatar: "/images/testimonials/avatar2.jpg",
-    rating: 5,
-  },
-  {
-    id: 3,
-    name: "Sophie Bernard",
-    role: "Coach Fitness",
-    content: "Grâce à mon nouveau site, je reçois beaucoup plus de demandes. L'investissement en valait vraiment la peine.",
-    avatar: "/images/testimonials/avatar3.jpg",
-    rating: 5,
-  },
-];
+// Témoignages clients - À remplir plus tard avec de vrais avis
+export const testimonials: {
+  id: number;
+  name: string;
+  role: string;
+  content: string;
+  avatar: string;
+  rating: number;
+}[] = [];
 
 // FAQ
 export const faq = [
