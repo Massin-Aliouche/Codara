@@ -70,11 +70,6 @@ export default function Hero() {
                 </div>
                 <div className="hidden sm:block w-px h-12 bg-secondary-200" />
                 <div className="text-center sm:text-left">
-                  <p className="text-3xl font-bold text-secondary-900">100%</p>
-                  <p className="text-secondary-500 text-sm">Sur-mesure</p>
-                </div>
-                <div className="hidden sm:block w-px h-12 bg-secondary-200" />
-                <div className="text-center sm:text-left">
                   <p className="text-3xl font-bold text-secondary-900">490€</p>
                   <p className="text-secondary-500 text-sm">À partir de</p>
                 </div>
@@ -123,8 +118,8 @@ export default function Hero() {
                     <CheckCircle className="w-5 h-5 text-green-600" />
                   </div>
                   <div>
-                    <p className="font-semibold text-secondary-900 text-sm">Performance</p>
-                    <p className="text-green-600 text-sm font-bold">98/100</p>
+                    <p className="font-semibold text-secondary-900 text-sm">Responsive</p>
+                    <p className="text-green-600 text-sm font-bold">Mobile & Desktop</p>
                   </div>
                 </div>
               </div>
@@ -135,8 +130,8 @@ export default function Hero() {
                     <Sparkles className="w-5 h-5 text-primary-600" />
                   </div>
                   <div>
-                    <p className="font-semibold text-secondary-900 text-sm">SEO Score</p>
-                    <p className="text-primary-600 text-sm font-bold">Excellent</p>
+                    <p className="font-semibold text-secondary-900 text-sm">Design</p>
+                    <p className="text-primary-600 text-sm font-bold">Sur-mesure</p>
                   </div>
                 </div>
               </div>
