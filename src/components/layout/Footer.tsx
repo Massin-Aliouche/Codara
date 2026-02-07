@@ -13,13 +13,13 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">W</span>
+                <span className="text-white font-bold text-xl">C</span>
               </div>
               <span className="text-xl font-bold">{siteConfig.name}</span>
             </div>
             <p className="text-secondary-400 mb-6">
-              Création de sites web professionnels pour entrepreneurs et PME. 
-              Transformez votre présence en ligne.
+              Sites vitrines professionnels pour artisans et indépendants.
+              Livrés en 3 à 5 jours.
             </p>
             <div className="flex gap-4">
               <a

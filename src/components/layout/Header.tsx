@@ -34,7 +34,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">W</span>
+              <span className="text-white font-bold text-xl">C</span>
             </div>
             <span className="text-xl font-bold text-secondary-900">
               {siteConfig.name}

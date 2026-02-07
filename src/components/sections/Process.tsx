@@ -2,7 +2,7 @@ import { process } from '@/lib/config';
 
 export default function Process() {
   return (
-    <section className="section-padding bg-secondary-900 text-white">
+    <section id="processus" className="section-padding bg-secondary-900 text-white">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">

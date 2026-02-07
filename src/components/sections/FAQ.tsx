@@ -8,7 +8,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="section-padding">
+    <section id="faq" className="section-padding">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
