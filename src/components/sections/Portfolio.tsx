@@ -19,7 +19,7 @@ export default function Portfolio() {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-primary-100 to-accent-100 rounded-full text-primary-700 font-medium text-sm mb-4 border border-primary-200/50">
+          <span className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-secondary-700 font-medium text-sm mb-4 border border-secondary-200 shadow-sm">
             Portfolio
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 mb-4">
@@ -56,15 +56,15 @@ export default function Portfolio() {
               className="group bg-white rounded-2xl overflow-hidden shadow-lg border border-secondary-100 card-hover"
             >
               {/* Image */}
-              <div className="relative h-48 bg-gradient-to-br from-primary-100 to-accent-100 overflow-hidden">
+              <div className="relative h-48 bg-gradient-to-br from-secondary-100 to-primary-50 overflow-hidden">
                 {/* Placeholder - remplace par tes vraies images */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-primary-400 text-6xl font-bold opacity-30">
+                  <div className="text-primary-400 text-6xl font-bold opacity-40">
                     {project.title.charAt(0)}
                   </div>
                 </div>
                 {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-primary-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <div className="absolute inset-0 bg-secondary-900/85 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <a 
                     href={project.link} 
                     target="_blank" 

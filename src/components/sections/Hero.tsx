@@ -4,18 +4,18 @@ import { Button } from '@/components/ui';
 export default function Hero() {
   return (
     <section id="accueil" className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
-      {/* Background decorations */}
+      {/* Background decorations - subtiles pour ne pas concurrencer le logo */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-300/40 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-300/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-primary-100/50 to-transparent" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-200/20 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-200/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-secondary-100/30 to-transparent" />
       </div>
 
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-100 to-accent-100 rounded-full text-primary-700 font-medium text-sm mb-6 border border-primary-200/50">
-            <Rocket className="w-4 h-4" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-secondary-700 font-medium text-sm mb-6 border border-secondary-200 shadow-sm">
+            <Rocket className="w-4 h-4 text-primary-600" />
             Livré en 3 à 5 jours
           </div>
 
@@ -33,16 +33,16 @@ export default function Hero() {
 
           {/* Benefits */}
           <ul className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center mb-10">
-            <li className="flex items-center justify-center gap-2 text-secondary-700">
-              <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+            <li className="flex items-center justify-center gap-2 text-secondary-600">
+              <CheckCircle className="w-5 h-5 text-primary-500 flex-shrink-0" />
               <span>Prêt en quelques jours</span>
             </li>
-            <li className="flex items-center justify-center gap-2 text-secondary-700">
-              <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+            <li className="flex items-center justify-center gap-2 text-secondary-600">
+              <CheckCircle className="w-5 h-5 text-primary-500 flex-shrink-0" />
               <span>Prix fixe dès 390€</span>
             </li>
-            <li className="flex items-center justify-center gap-2 text-secondary-700">
-              <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+            <li className="flex items-center justify-center gap-2 text-secondary-600">
+              <CheckCircle className="w-5 h-5 text-primary-500 flex-shrink-0" />
               <span>Code fourni ou hébergement géré</span>
             </li>
           </ul>
@@ -53,7 +53,7 @@ export default function Hero() {
               Recevoir un devis gratuit
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button variant="ghost" size="lg" href="#tarifs" className="text-secondary-600 hover:text-secondary-900">
+            <Button variant="outline" size="lg" href="#tarifs">
               Voir les offres
             </Button>
           </div>

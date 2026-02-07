@@ -32,14 +32,14 @@ export default function Header() {
     >
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo - taille réduite pour meilleure intégration */}
           <Link href="/" className="flex items-center">
             <Image
               src="/Codara/Codara%20logo.png"
               alt="Codara"
-              width={140}
-              height={40}
-              className="h-10 w-auto"
+              width={120}
+              height={34}
+              className="h-8 w-auto"
               priority
             />
           </Link>
