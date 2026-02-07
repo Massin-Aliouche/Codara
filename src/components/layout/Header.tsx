@@ -26,7 +26,7 @@ export default function Header() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-secondary-100'
+          ? 'bg-[var(--bg)]/95 backdrop-blur-md border-b border-[var(--border)]'
           : 'bg-transparent'
       )}
     >
@@ -39,7 +39,7 @@ export default function Header() {
               alt="Codara"
               width={120}
               height={34}
-              className="h-8 w-auto"
+              className="h-8 w-auto logo-balanced"
               priority
             />
           </Link>
@@ -50,7 +50,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-secondary-600 hover:text-primary-500 font-medium transition-colors"
+                className="nav-link font-medium"
               >
                 {item.name}
               </Link>
@@ -66,7 +66,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-secondary-600"
+            className="md:hidden p-2 text-[var(--text-muted)] hover:text-[var(--primary)]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -80,19 +80,19 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t border-secondary-100 shadow-lg animate-slide-down">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-[var(--bg-elevated)] border-t border-[var(--border)] shadow-lg animate-slide-down">
             <div className="container-custom py-4">
               {siteConfig.navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block py-3 text-secondary-600 hover:text-primary-600 font-medium transition-colors"
+                  className="block py-3 nav-link font-medium"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-4 mt-4 border-t border-secondary-100">
+              <div className="pt-4 mt-4 border-t border-[var(--border)]">
                 <Button className="w-full" href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
                   Demander un devis
                 </Button>
