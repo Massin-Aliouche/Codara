@@ -1,10 +1,8 @@
 import { Header, Footer } from "@/components/layout";
 import {
   Hero,
-  Services,
-  Portfolio,
+  Benefits,
   Pricing,
-  Testimonials,
   Process,
   About,
   FAQ,
@@ -18,10 +16,8 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Services />
-        <Portfolio />
+        <Benefits />
         <Pricing />
-        <Testimonials />
         <Process />
         <About />
         <FAQ />

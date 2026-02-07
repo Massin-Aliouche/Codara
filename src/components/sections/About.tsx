@@ -1,34 +1,23 @@
-import { Award, Users, Clock } from 'lucide-react';
+import { MessageCircle, Zap, Heart } from 'lucide-react';
 import { Button } from '@/components/ui';
 
 export default function About() {
   const highlights = [
     {
-      icon: Award,
-      title: 'Passionné',
-      description: 'Du code propre et moderne',
+      icon: Zap,
+      title: 'Rapide',
+      description: '7 jours max',
     },
     {
-      icon: Users,
-      title: 'À l\'écoute',
-      description: 'De vos besoins et objectifs',
+      icon: MessageCircle,
+      title: 'Direct',
+      description: 'Un seul interlocuteur',
     },
     {
-      icon: Clock,
-      title: 'Réactif',
-      description: 'Réponse sous 24h garantie',
+      icon: Heart,
+      title: 'Simple',
+      description: 'Pas de jargon',
     },
-  ];
-
-  const skills = [
-    'Next.js & React',
-    'WordPress',
-    'Shopify',
-    'TailwindCSS',
-    'TypeScript',
-    'SEO',
-    'UI/UX Design',
-    'Performance',
   ];
 
   return (
@@ -81,50 +70,31 @@ export default function About() {
               À propos
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-secondary-900 mb-6">
-              Salut, je suis{' '}
+              Salut, moi c&apos;est{' '}
               <span className="gradient-text">Massin</span> 👋
             </h2>
             <div className="space-y-4 text-secondary-600 mb-8">
               <p>
-                Développeur web passionné, j&apos;aide les entrepreneurs et PME à créer 
-                une présence en ligne qui fait la différence.
+                Je suis développeur web freelance. Je crée des sites vitrines 
+                pour les indépendants et petites entreprises qui veulent une 
+                présence en ligne simple et efficace.
               </p>
               <p>
-                Mon objectif ? Créer des sites web qui ne sont pas seulement beaux, 
-                mais qui convertissent vos visiteurs en clients. Je combine design 
-                moderne, performance technique et optimisation SEO.
+                Mon truc ? Aller à l&apos;essentiel. Pas de process compliqué, 
+                pas de réunions interminables. On échange, je comprends ce dont 
+                vous avez besoin, et je vous livre un site qui vous ressemble.
               </p>
               <p>
-                Chaque projet est unique et mérite une attention particulière. 
-                C&apos;est pourquoi je travaille en étroite collaboration avec vous 
-                pour comprendre vos objectifs et créer la solution parfaite.
+                Vous récupérez le code source, vous en faites ce que vous voulez. 
+                Ou alors je m&apos;occupe de tout (hébergement, mise en ligne) si 
+                vous préférez ne pas vous en soucier.
               </p>
-            </div>
-
-            {/* Skills */}
-            <div className="mb-8">
-              <h3 className="font-semibold text-secondary-900 mb-4">
-                Mes compétences
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-4 py-2 bg-white border border-secondary-200 rounded-full text-sm text-secondary-700"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
             </div>
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button href="#contact">
-                Discutons de votre projet
-              </Button>
-              <Button variant="ghost" href="#portfolio">
-                Voir mon portfolio
+                On discute de votre projet ?
               </Button>
             </div>
           </div>

@@ -2,8 +2,8 @@
 export const siteConfig = {
   // Informations de base
   name: "Codara",
-  title: "Codara - Création de Sites Web Professionnels",
-  description: "Je crée des sites web modernes, rapides et sur-mesure pour les entrepreneurs et PME. Transformez votre présence en ligne avec un site qui convertit.",
+  title: "Codara - Votre site vitrine pro, livré en 7 jours",
+  description: "Vous êtes artisan, coach, thérapeute ou indépendant ? Je crée votre site vitrine professionnel, clé en main, en moins d'une semaine. Simple, efficace, sans jargon.",
   
   // Tes coordonnées
   contact: {
@@ -20,183 +20,130 @@ export const siteConfig = {
   // Navigation
   navigation: [
     { name: "Accueil", href: "#accueil" },
-    { name: "Services", href: "#services" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Tarifs", href: "#tarifs" },
+    { name: "Offres", href: "#tarifs" },
+    { name: "Comment ça marche", href: "#processus" },
     { name: "À propos", href: "#a-propos" },
     { name: "Contact", href: "#contact" },
   ],
 };
 
-// Services proposés
-export const services = [
+// Avantages pour le client
+export const benefits = [
   {
     id: 1,
-    title: "Site Vitrine",
-    description: "Un site élégant pour présenter votre activité et attirer de nouveaux clients. Design moderne et responsive.",
-    icon: "Globe",
-    features: [
-      "Design sur-mesure",
-      "Responsive (mobile, tablette, desktop)",
-      "Optimisé SEO",
-      "Formulaire de contact",
-      "Hébergement inclus 1 an",
-    ],
+    title: "Livraison rapide",
+    description: "Votre site est prêt en 3 à 7 jours. Pas de délais interminables.",
+    icon: "Zap",
   },
   {
     id: 2,
-    title: "Site E-commerce",
-    description: "Vendez vos produits en ligne avec une boutique performante et facile à gérer.",
-    icon: "ShoppingCart",
-    features: [
-      "Catalogue de produits",
-      "Paiement sécurisé (Stripe)",
-      "Gestion des stocks",
-      "Tableau de bord admin",
-      "Formation incluse",
-    ],
+    title: "Prix fixe, sans surprise",
+    description: "Vous savez exactement ce que vous payez. Pas de frais cachés.",
+    icon: "Shield",
   },
   {
     id: 3,
-    title: "Application Web",
-    description: "Des solutions sur-mesure pour automatiser vos processus et booster votre productivité.",
-    icon: "Code",
-    features: [
-      "Développement sur-mesure",
-      "Interface intuitive",
-      "Base de données sécurisée",
-      "API et intégrations",
-      "Support technique",
-    ],
+    title: "Vous êtes propriétaire",
+    description: "Le code vous appartient. Vous pouvez le récupérer et l'héberger où vous voulez.",
+    icon: "Key",
   },
   {
     id: 4,
-    title: "Refonte de Site",
-    description: "Donnez un coup de neuf à votre site existant avec un design moderne et de meilleures performances.",
-    icon: "RefreshCw",
-    features: [
-      "Audit de l'existant",
-      "Nouveau design moderne",
-      "Migration des contenus",
-      "Amélioration des performances",
-      "Formation à la gestion",
-    ],
+    title: "Un seul interlocuteur",
+    description: "Pas d'agence, pas de réunions inutiles. On échange directement, simplement.",
+    icon: "MessageCircle",
   },
 ];
 
-// Tarifs - Prix compétitifs pour freelance
+// Tarifs - Offres claires et simples
 export const pricing = [
   {
     id: 1,
-    name: "Essentiel",
-    description: "Idéal pour démarrer votre présence en ligne",
-    price: "490",
-    priceNote: "à partir de",
+    name: "Site 1 page",
+    description: "Parfait pour présenter votre activité simplement",
+    price: "390",
+    priceNote: "",
     popular: false,
     features: [
-      "Site one-page moderne",
-      "Design responsive",
-      "Optimisation SEO de base",
+      "1 page complète et moderne",
+      "Adapté mobile et tablette",
       "Formulaire de contact",
-      "Livraison sous 1 semaine",
-      "1 révision incluse",
+      "Référencement de base (SEO)",
+      "Livraison en 3-5 jours",
+      "Code source fourni",
     ],
   },
   {
     id: 2,
-    name: "Professionnel",
-    description: "Pour une présence en ligne complète",
-    price: "990",
-    priceNote: "à partir de",
+    name: "Site vitrine",
+    description: "Le choix idéal pour la plupart des pros",
+    price: "790",
+    priceNote: "",
     popular: true,
     features: [
-      "Jusqu'à 5 pages",
-      "Design premium sur-mesure",
-      "Optimisation SEO avancée",
-      "Intégration réseaux sociaux",
-      "Analytics et statistiques",
-      "Livraison sous 2 semaines",
-      "3 révisions incluses",
-      "Support 1 mois inclus",
+      "4-5 pages (Accueil, Services, À propos...)",
+      "Design personnalisé à votre image",
+      "Adapté mobile et tablette",
+      "Formulaire de contact",
+      "Référencement optimisé (SEO)",
+      "Livraison en 5-7 jours",
+      "Code source fourni",
+      "1 modification offerte après livraison",
     ],
   },
   {
     id: 3,
-    name: "Sur-mesure",
-    description: "Pour les projets ambitieux",
-    price: "Sur devis",
-    priceNote: "",
+    name: "Clé en main",
+    description: "Je m'occupe de tout, vous n'avez rien à faire",
+    price: "990",
+    priceNote: "à partir de",
     popular: false,
     features: [
-      "Nombre de pages illimité",
-      "Fonctionnalités avancées",
-      "E-commerce / Application web",
-      "Intégrations personnalisées",
-      "Design 100% unique",
-      "Formation complète",
-      "Révisions illimitées",
-      "Support 3 mois inclus",
+      "Site vitrine complet (4-5 pages)",
+      "Nom de domaine inclus (1 an)",
+      "Hébergement inclus (1 an)",
+      "Mise en ligne par mes soins",
+      "Certificat sécurité HTTPS",
+      "Formation utilisation (30 min)",
+      "Support email pendant 1 mois",
     ],
   },
 ];
 
-// Portfolio - Projets de démonstration (templates et concepts)
-export const portfolio = [
+// Options supplémentaires
+export const options = [
   {
-    id: 1,
-    title: "FitCoach Pro",
-    category: "Site Vitrine",
-    description: "Landing page moderne pour un coach sportif avec réservation de séances et présentation des programmes.",
-    image: "/images/portfolio/fitcoach.jpg",
-    tags: ["Next.js", "TailwindCSS", "Calendly"],
-    link: "#",
+    name: "Mise en ligne",
+    price: "150",
+    description: "Je mets votre site en ligne sur votre hébergement",
   },
   {
-    id: 2,
-    title: "Saveurs & Terroir",
-    category: "E-commerce",
-    description: "Boutique en ligne de produits artisanaux locaux avec gestion des commandes et paiement sécurisé.",
-    image: "/images/portfolio/terroir.jpg",
-    tags: ["React", "Stripe", "E-commerce"],
-    link: "#",
+    name: "Page supplémentaire",
+    price: "80",
+    description: "Ajout d'une page à votre site",
   },
   {
-    id: 3,
-    title: "Studio Créatif",
-    category: "Site Vitrine",
-    description: "Portfolio élégant pour une agence de design avec galerie de projets et formulaire de contact.",
-    image: "/images/portfolio/studio.jpg",
-    tags: ["Next.js", "Animations", "Portfolio"],
-    link: "#",
+    name: "Maintenance mensuelle",
+    price: "50/mois",
+    description: "Mises à jour, modifications mineures, support prioritaire",
   },
   {
-    id: 4,
-    title: "TaskFlow",
-    category: "Application Web",
-    description: "Application de gestion de tâches collaborative avec tableaux Kanban et suivi en temps réel.",
-    image: "/images/portfolio/taskflow.jpg",
-    tags: ["React", "Node.js", "WebSocket"],
-    link: "#",
-  },
-  {
-    id: 5,
-    title: "Green Garden",
-    category: "Site Vitrine",
-    description: "Site vitrine pour un paysagiste avec galerie de réalisations et demande de devis en ligne.",
-    image: "/images/portfolio/garden.jpg",
-    tags: ["Next.js", "SEO", "Contact"],
-    link: "#",
-  },
-  {
-    id: 6,
-    title: "BookMyDoc",
-    category: "Application Web",
-    description: "Plateforme de prise de rendez-vous médicaux avec gestion des disponibilités et rappels automatiques.",
-    image: "/images/portfolio/medical.jpg",
-    tags: ["React", "API", "Notifications"],
-    link: "#",
+    name: "Rédaction des textes",
+    price: "150",
+    description: "Je rédige les contenus de votre site",
   },
 ];
+
+// Portfolio - À remplir avec tes vrais projets plus tard
+export const portfolio: {
+  id: number;
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  tags: string[];
+  link: string;
+}[] = [];
 
 // Témoignages clients - À remplir plus tard avec de vrais avis
 export const testimonials: {
@@ -211,28 +158,28 @@ export const testimonials: {
 // FAQ
 export const faq = [
   {
-    question: "Combien de temps faut-il pour créer un site ?",
-    answer: "En général, un site vitrine prend 2 à 3 semaines, un site e-commerce 4 à 6 semaines. Le délai exact dépend de la complexité du projet et de votre réactivité pour les retours.",
+    question: "C'est vraiment livré en 7 jours ?",
+    answer: "Oui, pour un site vitrine standard. Je travaille vite et bien. La seule condition : que vous me fournissiez vos contenus (textes, photos) rapidement. Si vous n'avez pas tout, je peux vous aider.",
   },
   {
-    question: "Est-ce que je pourrai modifier mon site moi-même ?",
-    answer: "Oui ! Je vous forme à la gestion de votre site et vous fournis une documentation. Pour les sites WordPress ou avec CMS, vous pourrez facilement modifier textes et images.",
+    question: "Je récupère quoi exactement ?",
+    answer: "Vous recevez le code source complet de votre site. C'est à vous. Vous pouvez l'héberger où vous voulez, le modifier, le faire évoluer. Aucune dépendance à un outil ou à moi.",
   },
   {
-    question: "Le prix inclut-il l'hébergement ?",
-    answer: "La première année d'hébergement est offerte. Ensuite, comptez environ 10-20€/mois selon vos besoins. Je peux aussi vous conseiller sur les meilleures options.",
+    question: "Et si je ne sais pas héberger un site ?",
+    answer: "Pas de souci ! Avec l'offre Clé en main, je m'occupe de tout : achat du nom de domaine, hébergement, mise en ligne. Vous n'avez rien à faire.",
   },
   {
-    question: "Mon site sera-t-il optimisé pour Google (SEO) ?",
-    answer: "Absolument. Tous mes sites sont optimisés pour le référencement : structure propre, balises meta, vitesse de chargement, responsive design, etc.",
+    question: "Je peux demander des modifications après ?",
+    answer: "Oui. Une modification est incluse après livraison (offre Site vitrine). Ensuite, les modifications sont facturées à l'heure ou via un forfait maintenance mensuel.",
   },
   {
-    question: "Proposez-vous de la maintenance ?",
-    answer: "Oui, je propose des forfaits de maintenance mensuelle incluant mises à jour, sauvegardes, sécurité et modifications mineures. Contactez-moi pour un devis.",
+    question: "Mon site sera visible sur Google ?",
+    answer: "Oui, tous mes sites sont construits pour être bien référencés : structure propre, temps de chargement rapide, adapté mobile. Le référencement prend ensuite quelques semaines à se mettre en place.",
   },
   {
-    question: "Comment se déroule un projet ?",
-    answer: "1) Appel découverte gratuit 2) Devis détaillé 3) Acompte de 50% 4) Maquettes et validation 5) Développement 6) Tests et ajustements 7) Mise en ligne 8) Formation",
+    question: "Comment on procède ?",
+    answer: "C'est simple : 1) Vous me contactez 2) On échange par email ou téléphone 3) Je vous envoie un devis 4) Vous validez et payez 50% 5) Je crée votre site 6) Vous validez 7) Livraison et solde.",
   },
 ];
 
@@ -240,27 +187,27 @@ export const faq = [
 export const process = [
   {
     step: 1,
-    title: "Découverte",
-    description: "On discute de votre projet, vos objectifs et vos besoins lors d'un appel gratuit de 30 minutes.",
+    title: "On échange",
+    description: "Vous me décrivez votre activité et ce que vous attendez. Par email ou téléphone, comme vous préférez.",
   },
   {
     step: 2,
-    title: "Proposition",
-    description: "Je vous envoie un devis détaillé avec le planning et les fonctionnalités prévues.",
+    title: "Je vous fais un devis",
+    description: "Un prix clair, sans surprise. Vous savez exactement ce que vous aurez et quand.",
   },
   {
     step: 3,
-    title: "Design",
-    description: "Je crée les maquettes de votre site. Vous validez avant le développement.",
+    title: "Je crée votre site",
+    description: "Vous me transmettez vos contenus, je m'occupe du reste. Je vous tiens au courant de l'avancement.",
   },
   {
     step: 4,
-    title: "Développement",
-    description: "Je code votre site en vous tenant informé de l'avancement régulièrement.",
+    title: "Vous validez",
+    description: "Je vous montre le résultat. On ajuste si besoin jusqu'à ce que ça vous plaise.",
   },
   {
     step: 5,
-    title: "Lancement",
-    description: "Tests, ajustements, mise en ligne et formation à la gestion de votre site.",
+    title: "C'est en ligne",
+    description: "Votre site est prêt. Vous recevez le code ou je le mets en ligne pour vous.",
   },
 ];

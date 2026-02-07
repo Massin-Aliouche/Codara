@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Send, Mail, MapPin, Loader2 } from 'lucide-react';
+import { Send, Mail, Loader2 } from 'lucide-react';
 import { siteConfig } from '@/lib/config';
 import { Button, Input, Textarea } from '@/components/ui';
 import toast from 'react-hot-toast';
@@ -50,12 +50,12 @@ export default function Contact() {
             Contact
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 mb-4">
-            Parlons de votre{' '}
+            Décrivez-moi votre{' '}
             <span className="gradient-text">projet</span>
           </h2>
           <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
-            Prêt à lancer votre projet ? Contactez-moi pour un devis gratuit 
-            et sans engagement. Je réponds sous 24h.
+            En quelques lignes, dites-moi ce dont vous avez besoin. 
+            Je vous réponds sous 24h avec un devis clair.
           </p>
         </div>
 
@@ -64,47 +64,50 @@ export default function Contact() {
           <div className="lg:col-span-1 space-y-6">
             <div className="bg-white p-6 rounded-2xl shadow-lg border border-secondary-100">
               <h3 className="text-xl font-semibold text-secondary-900 mb-6">
-                Informations de contact
+                Comment ça se passe ?
               </h3>
               
               <div className="space-y-4">
-                <a
-                  href={`mailto:${siteConfig.contact.email}`}
-                  className="flex items-center gap-4 p-4 rounded-xl bg-secondary-50 hover:bg-primary-50 transition-colors group"
-                >
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center group-hover:bg-primary-200 transition-colors">
-                    <Mail className="w-5 h-5 text-primary-600" />
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-secondary-50">
+                  <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-primary-600 font-semibold text-sm">1</span>
                   </div>
-                  <div>
-                    <p className="text-sm text-secondary-500">Email</p>
-                    <p className="font-medium text-secondary-900">
-                      {siteConfig.contact.email}
-                    </p>
+                  <p className="text-secondary-700 text-sm">
+                    Vous me décrivez votre projet via le formulaire
+                  </p>
+                </div>
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-secondary-50">
+                  <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-primary-600 font-semibold text-sm">2</span>
                   </div>
-                </a>
-
-<div className="flex items-center gap-4 p-4 rounded-xl bg-secondary-50">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-primary-600" />
+                  <p className="text-secondary-700 text-sm">
+                    Je vous réponds sous 24h avec un devis détaillé
+                  </p>
+                </div>
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-secondary-50">
+                  <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-primary-600 font-semibold text-sm">3</span>
                   </div>
-                  <div>
-                    <p className="text-sm text-secondary-500">Localisation</p>
-                    <p className="font-medium text-secondary-900">
-                      {siteConfig.contact.location}
-                    </p>
-                  </div>
+                  <p className="text-secondary-700 text-sm">
+                    On échange si besoin, puis on démarre !
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Response time */}
-            <div className="bg-primary-600 p-6 rounded-2xl text-white">
-              <h4 className="font-semibold mb-2">⚡ Réponse rapide</h4>
+            {/* Direct contact */}
+            <a
+              href={`mailto:${siteConfig.contact.email}`}
+              className="block bg-primary-600 p-6 rounded-2xl text-white hover:bg-primary-700 transition-colors"
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <Mail className="w-5 h-5" />
+                <span className="font-semibold">Ou écrivez-moi directement</span>
+              </div>
               <p className="text-primary-100 text-sm">
-                Je réponds à tous les messages sous 24h. 
-                Pour les urgences, appelez-moi directement.
+                {siteConfig.contact.email}
               </p>
-            </div>
+            </a>
           </div>
 
           {/* Contact Form */}
