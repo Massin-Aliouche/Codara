@@ -98,7 +98,7 @@ export default function Contact() {
             {/* Direct contact */}
             <a
               href={`mailto:${siteConfig.contact.email}`}
-              className="block bg-primary-600 p-6 rounded-2xl text-white hover:bg-primary-700 transition-colors"
+              className="block bg-gradient-to-r from-primary-500 to-accent-500 p-6 rounded-2xl text-white hover:from-primary-600 hover:to-accent-600 transition-all"
             >
               <div className="flex items-center gap-3 mb-2">
                 <Mail className="w-5 h-5" />

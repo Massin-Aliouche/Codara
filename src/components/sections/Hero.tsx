@@ -4,18 +4,18 @@ import { Button } from '@/components/ui';
 export default function Hero() {
   return (
     <section id="accueil" className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
-      {/* Background decorations - subtiles pour ne pas concurrencer le logo */}
+      {/* Background decorations - couleurs du logo */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-200/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-200/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-secondary-100/30 to-transparent" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-400/25 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-primary-100/40 to-transparent" />
       </div>
 
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-secondary-700 font-medium text-sm mb-6 border border-secondary-200 shadow-sm">
-            <Rocket className="w-4 h-4 text-primary-600" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full text-secondary-700 font-medium text-sm mb-6 border border-primary-200/50 shadow-sm">
+            <Rocket className="w-4 h-4 text-primary-500" />
             Livré en 3 à 5 jours
           </div>
 

@@ -28,7 +28,7 @@ export default function About() {
           <div className="relative">
             {/* Main image placeholder */}
             <div className="relative aspect-[4/5] max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 rounded-2xl shadow-xl">
                 {/* Placeholder - remplace par ta photo */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-white text-center">
@@ -41,8 +41,8 @@ export default function About() {
               </div>
 
               {/* Decorative elements */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-100 rounded-2xl -z-10" />
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-secondary-100 rounded-2xl -z-10" />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent-100 rounded-2xl -z-10" />
+              <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary-100 rounded-2xl -z-10" />
             </div>
 
             {/* Highlights cards */}

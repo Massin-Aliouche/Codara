@@ -33,7 +33,7 @@ export default function Testimonials() {
             >
               {/* Quote icon */}
               <div className="absolute -top-4 left-8">
-                <div className="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-primary-400 to-accent-500 rounded-full flex items-center justify-center">
                   <Quote className="w-4 h-4 text-white" />
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function Testimonials() {
               {/* Author */}
               <div className="flex items-center gap-4">
                 {/* Avatar placeholder */}
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-accent-500 rounded-full flex items-center justify-center text-white font-semibold">
                   {testimonial.name.split(' ').map(n => n[0]).join('')}
                 </div>
                 <div>

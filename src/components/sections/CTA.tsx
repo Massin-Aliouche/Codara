@@ -4,20 +4,21 @@ import { siteConfig } from '@/lib/config';
 
 export default function CTA() {
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary-800 via-secondary-900 to-secondary-950">
+    <section className="py-20 bg-gradient-to-br from-primary-500 via-primary-600 to-accent-600">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Besoin d&apos;un site vitrine ?
           </h2>
-          <p className="text-xl text-secondary-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Décrivez-moi votre projet en quelques lignes. 
             Je vous réponds sous 24h avec un devis clair.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              variant="primary"
+              variant="secondary"
               size="lg"
+              className="bg-white text-primary-600 hover:bg-white/90"
               href="#contact"
             >
               Me contacter
@@ -26,7 +27,7 @@ export default function CTA() {
             <Button
               variant="ghost"
               size="lg"
-              className="text-secondary-300 border-2 border-secondary-600 hover:bg-secondary-800 hover:text-white"
+              className="text-white border-2 border-white/40 hover:bg-white/10"
               href={`mailto:${siteConfig.contact.email}`}
             >
               <Mail className="w-5 h-5 mr-2" />

@@ -39,7 +39,7 @@ export default function Portfolio() {
               onClick={() => setActiveCategory(category)}
               className={`px-5 py-2 rounded-full font-medium text-sm transition-all duration-200 ${
                 activeCategory === category
-                  ? 'bg-primary-600 text-white shadow-lg shadow-primary-600/25'
+                  ? 'bg-gradient-to-r from-primary-500 to-accent-500 text-white shadow-lg shadow-accent-500/25'
                   : 'bg-secondary-100 text-secondary-600 hover:bg-secondary-200'
               }`}
             >

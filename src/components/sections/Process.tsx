@@ -30,7 +30,7 @@ export default function Process() {
               )}
 
               {/* Step number */}
-              <div className="relative z-10 w-16 h-16 mx-auto mb-6 bg-primary-600 rounded-2xl flex items-center justify-center text-2xl font-bold shadow-lg shadow-primary-600/25">
+              <div className="relative z-10 w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-primary-400 to-accent-500 rounded-2xl flex items-center justify-center text-2xl font-bold shadow-lg shadow-accent-500/25">
                 {item.step}
               </div>
 
