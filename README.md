@@ -1,8 +1,14 @@
 # Codara - Site Vitrine Freelance
 
-Site web professionnel pour présenter tes services de création de sites web.
+Site web pour présenter mes services de création de sites vitrines pour indépendants et petites entreprises.
 
 🔗 **Site en ligne** : [https://massin-aliouche.github.io/Codara/](https://massin-aliouche.github.io/Codara/)
+
+## 🎯 Positionnement
+
+- **Cible** : Artisans, coachs, thérapeutes, indépendants
+- **Offre** : Sites vitrines livrés en 3-7 jours
+- **Tarifs** : 390€ (1 page) / 790€ (site complet) / 990€ (clé en main)
 
 ## 🚀 Technologies
 
@@ -10,15 +16,14 @@ Site web professionnel pour présenter tes services de création de sites web.
 - **TypeScript** - Typage statique
 - **TailwindCSS** - Styles utilitaires
 - **Lucide Icons** - Icônes
-- **Framer Motion** - Animations
 - **React Hot Toast** - Notifications
 
 ## 📦 Installation
 
 ```bash
 # Cloner le projet
-git clone <ton-repo>
-cd codara
+git clone https://github.com/Massin-Aliouche/Codara.git
+cd Codara
 
 # Installer les dépendances
 npm install
@@ -31,51 +36,44 @@ Ouvre [http://localhost:3000](http://localhost:3000) dans ton navigateur.
 
 ## 🎨 Personnalisation
 
-### 1. Informations de contact
+### Configuration principale
 
-Modifie le fichier `src/lib/config.ts` :
+Tout se modifie dans `src/lib/config.ts` :
 
 ```typescript
 export const siteConfig = {
-  name: "TonNom",
+  name: "Codara",
   contact: {
     email: "ton@email.fr",
-    phone: "+33 6 XX XX XX XX",
-    location: "Ta Ville, France",
+    location: "France",
   },
   socials: {
-    twitter: "https://twitter.com/tonpseudo",
     linkedin: "https://linkedin.com/in/tonprofil",
-    // ...
+    github: "https://github.com/tonpseudo",
   },
 };
 ```
 
-### 2. Services et Tarifs
+### Éléments personnalisables
 
-Toujours dans `src/lib/config.ts`, modifie :
-- `services` - Tes services proposés
-- `pricing` - Tes tarifs
-- `portfolio` - Tes réalisations
-- `testimonials` - Témoignages clients
+| Élément | Fichier |
+|---------|---------|
+| Infos de contact | `config.ts` → `siteConfig` |
+| Avantages | `config.ts` → `benefits` |
+| Tarifs & offres | `config.ts` → `pricing` |
+| Options supplémentaires | `config.ts` → `options` |
+| FAQ | `config.ts` → `faq` |
+| Processus | `config.ts` → `process` |
 
-### 3. Images
-
-Ajoute tes images dans le dossier `public/images/` :
-- `portfolio/` - Screenshots de tes projets
-- `testimonials/` - Photos de tes clients (optionnel)
-
-### 4. Couleurs
+### Couleurs
 
 Modifie les couleurs dans `tailwind.config.ts` :
 
 ```typescript
 colors: {
   primary: {
-    // Change ces valeurs pour ta couleur principale
     500: '#3b82f6',
     600: '#2563eb',
-    // ...
   },
 }
 ```
@@ -84,23 +82,18 @@ colors: {
 
 Le formulaire est prêt mais nécessite une intégration backend. Options :
 
-1. **EmailJS** - Simple, gratuit jusqu'à 200 emails/mois
-2. **Resend** - API moderne, gratuit jusqu'à 3000 emails/mois
-3. **Formspree** - Pas de code backend nécessaire
+- **EmailJS** - Simple, gratuit jusqu'à 200 emails/mois
+- **Resend** - API moderne, gratuit jusqu'à 3000 emails/mois
+- **Formspree** - Pas de code backend nécessaire
 
 ## 🚀 Déploiement
 
-### Vercel (Recommandé)
-
-```bash
-npm install -g vercel
-vercel
-```
+Le site est actuellement déployé sur **GitHub Pages** via GitHub Actions.
 
 ### Autres options
+- Vercel (recommandé pour Next.js)
 - Netlify
 - Railway
-- DigitalOcean
 
 ## 📁 Structure du projet
 
@@ -114,6 +107,14 @@ src/
 ├── components/
 │   ├── layout/             # Header, Footer
 │   ├── sections/           # Sections de la page
+│   │   ├── Hero.tsx        # Accroche principale
+│   │   ├── Benefits.tsx    # Avantages
+│   │   ├── Pricing.tsx     # Offres et tarifs
+│   │   ├── Process.tsx     # Comment ça marche
+│   │   ├── About.tsx       # À propos
+│   │   ├── FAQ.tsx         # Questions fréquentes
+│   │   ├── Contact.tsx     # Formulaire de contact
+│   │   └── CTA.tsx         # Appel à l'action final
 │   └── ui/                 # Composants réutilisables
 └── lib/
     ├── config.ts           # Configuration du site
@@ -122,14 +123,13 @@ src/
 
 ## ✅ Checklist avant mise en ligne
 
-- [ ] Modifier les informations de contact dans `config.ts`
-- [ ] Ajouter tes projets dans le portfolio
-- [ ] Personnaliser les tarifs
-- [ ] Ajouter tes témoignages clients
+- [x] Modifier les informations de contact
+- [x] Personnaliser les tarifs
+- [x] Adapter la FAQ
 - [ ] Compléter les mentions légales (SIRET, etc.)
-- [ ] Intégrer le formulaire de contact
+- [ ] Intégrer le formulaire de contact avec un service email
+- [ ] Ajouter ta photo dans la section "À propos"
 - [ ] Ajouter Google Analytics (optionnel)
-- [ ] Vérifier le SEO (meta tags, sitemap)
 
 ## 📝 License
 
@@ -137,4 +137,4 @@ MIT - Libre d'utilisation commerciale.
 
 ---
 
-Créé avec ❤️ pour les freelances ambitieux
+Créé par Massin • [massin.aliouche.pro@gmail.com](mailto:massin.aliouche.pro@gmail.com)
