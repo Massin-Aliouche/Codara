@@ -26,13 +26,13 @@ export default function Header() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm'
+          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-secondary-100'
           : 'bg-transparent'
       )}
     >
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
-          {/* Logo - taille réduite pour meilleure intégration */}
+          {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/Codara/Codara%20logo.png"
@@ -50,7 +50,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-secondary-600 hover:text-primary-600 font-medium transition-colors"
+                className="text-secondary-600 hover:text-primary-500 font-medium transition-colors"
               >
                 {item.name}
               </Link>
@@ -59,7 +59,7 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button href="#contact">
+            <Button href="#contact" size="sm">
               Demander un devis
             </Button>
           </div>

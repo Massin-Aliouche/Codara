@@ -2,9 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ========================================
+   PALETTE CODARA - Basée sur le logo
+   Cyan (#22d3ee) → Violet (#a855f7)
+   ======================================== */
 :root {
-  --foreground: #0f172a;
-  --background: #f8fafc;
+  /* Fond & surfaces */
+  --bg: #0f172a;
+  --bg-soft: #1e293b;
+  --surface: #ffffff;
+  --surface-elevated: #f8fafc;
+  
+  /* Texte */
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --text-on-dark: #f1f5f9;
+  --text-on-dark-muted: #94a3b8;
+  
+  /* Couleurs d'accent - Logo */
+  --primary: #22d3ee;
+  --primary-dark: #06b6d4;
+  --accent: #a855f7;
+  --accent-dark: #9333ea;
+  
+  /* Gradients */
+  --gradient-brand: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  --gradient-brand-hover: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent-dark) 100%);
+  --gradient-glow: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(34, 211, 238, 0.15), transparent);
+  
+  /* Ombres */
+  --shadow-brand: 0 4px 24px -4px rgba(168, 85, 247, 0.25);
+  --shadow-brand-lg: 0 8px 32px -4px rgba(168, 85, 247, 0.3);
+  
+  /* Legacy */
+  --foreground: var(--text);
+  --background: var(--surface-elevated);
 }
 
 @layer base {
@@ -27,20 +59,119 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   
+  /* Gradient text amélioré */
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-400 to-accent-500 bg-clip-text text-transparent;
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .card-hover {
     @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
   }
   
+  /* ========================================
+     BOUTONS - Style premium
+     ======================================== */
+  
+  /* Primary: Gradient élégant avec glow */
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-gradient-to-r from-primary-500 to-accent-500 rounded-xl hover:from-primary-600 hover:to-accent-600 transition-all duration-300 shadow-lg shadow-primary-500/30;
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white rounded-xl transition-all duration-300;
+    background: var(--gradient-brand);
+    box-shadow: var(--shadow-brand);
+  }
+  .btn-primary:hover {
+    background: var(--gradient-brand-hover);
+    box-shadow: var(--shadow-brand-lg);
+    transform: translateY(-1px);
   }
   
+  /* Secondary: Discret, bordure fine */
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-primary-600 bg-white border-2 border-primary-600 rounded-lg hover:bg-primary-50 transition-colors duration-200;
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl transition-all duration-300;
+    color: var(--text-muted);
+    background: transparent;
+    border: 1px solid #e2e8f0;
+  }
+  .btn-secondary:hover {
+    color: var(--text);
+    background: #f8fafc;
+    border-color: #cbd5e1;
+  }
+  
+  /* ========================================
+     BADGE HERO - Style moderne
+     ======================================== */
+  .hero-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(34, 211, 238, 0.3);
+    color: var(--text);
+    box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.08);
+  }
+  .hero-badge svg {
+    color: var(--primary);
+  }
+  
+  /* ========================================
+     STAT CARDS - Mini cards premium
+     ======================================== */
+  .stat-card {
+    @apply flex flex-col items-center px-6 py-5 rounded-2xl text-center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+  }
+  .stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.1);
+    border-color: rgba(34, 211, 238, 0.4);
+  }
+  .stat-card-value {
+    @apply text-xl font-bold mb-1;
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .stat-card-label {
+    @apply text-sm;
+    color: var(--text-muted);
+  }
+  
+  /* ========================================
+     HERO SECTION - Glow subtil
+     ======================================== */
+  .hero-glow {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+  .hero-glow::before {
+    content: '';
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140%;
+    height: 100%;
+    background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(34, 211, 238, 0.12) 0%, transparent 60%),
+                radial-gradient(ellipse 40% 30% at 30% 20%, rgba(168, 85, 247, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .hero-glow::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.2), rgba(168, 85, 247, 0.2), transparent);
   }
   
   .input-field {

@@ -1,67 +1,78 @@
-import { ArrowRight, CheckCircle, Rocket } from 'lucide-react';
+import { ArrowRight, CheckCircle, Rocket, Clock, CreditCard, Code } from 'lucide-react';
 import { Button } from '@/components/ui';
 
 export default function Hero() {
+  const stats = [
+    { icon: Clock, value: '3-7 jours', label: 'Délai de livraison' },
+    { icon: CreditCard, value: 'Dès 390€', label: 'Prix transparent' },
+    { icon: Code, value: 'Code fourni', label: 'Vous êtes propriétaire' },
+  ];
+
   return (
     <section id="accueil" className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
-      {/* Background decorations - couleurs du logo */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-400/25 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-400/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-primary-100/40 to-transparent" />
-      </div>
+      {/* Glow background subtil */}
+      <div className="hero-glow" />
 
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-full text-secondary-700 font-medium text-sm mb-6 border border-primary-200/50 shadow-sm">
-            <Rocket className="w-4 h-4 text-primary-500" />
-            Livré en 3 à 5 jours
+          <div className="hero-badge mb-6">
+            <Rocket className="w-4 h-4" />
+            Sites livrés en 7 jours maximum
           </div>
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-secondary-900 mb-6 leading-tight">
-            Un site pro pour votre activité,{' '}
-            <span className="gradient-text">prêt cette semaine</span>
+            Votre site vitrine pro,{' '}
+            <span className="gradient-text">prêt en une semaine</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-secondary-600 mb-8 max-w-2xl mx-auto">
-            Vous êtes artisan, coach ou indépendant ? Je crée votre site vitrine 
-            clé en main. Vous vous occupez de votre métier, je m&apos;occupe du reste.
+            Artisan, coach, thérapeute, indépendant ? Je crée votre site internet 
+            professionnel, simple et efficace. Vous récupérez le code ou je m&apos;occupe de tout.
           </p>
 
           {/* Benefits */}
           <ul className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center mb-10">
             <li className="flex items-center justify-center gap-2 text-secondary-600">
               <CheckCircle className="w-5 h-5 text-primary-500 flex-shrink-0" />
-              <span>Prêt en quelques jours</span>
+              <span>Livraison rapide</span>
             </li>
             <li className="flex items-center justify-center gap-2 text-secondary-600">
               <CheckCircle className="w-5 h-5 text-primary-500 flex-shrink-0" />
-              <span>Prix fixe dès 390€</span>
+              <span>Prix fixe, sans surprise</span>
             </li>
             <li className="flex items-center justify-center gap-2 text-secondary-600">
               <CheckCircle className="w-5 h-5 text-primary-500 flex-shrink-0" />
-              <span>Code fourni ou hébergement géré</span>
+              <span>Vous êtes propriétaire du code</span>
             </li>
           </ul>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button size="lg" href="#contact">
-              Recevoir un devis gratuit
+              Demander un devis gratuit
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button variant="outline" size="lg" href="#tarifs">
+            <Button variant="secondary" size="lg" href="#tarifs">
               Voir les offres
             </Button>
           </div>
 
-          {/* Reassurance line */}
-          <p className="text-sm text-secondary-500">
-            Réponse sous 24h · Satisfait ou retouché · Paiement en 2 fois possible
-          </p>
+          {/* Stat Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+            {stats.map((stat, index) => {
+              const Icon = stat.icon;
+              return (
+                <div key={index} className="stat-card">
+                  <Icon className="w-5 h-5 text-primary-500 mb-2" />
+                  <span className="stat-card-value">{stat.value}</span>
+                  <span className="stat-card-label">{stat.label}</span>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
