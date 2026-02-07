@@ -4,13 +4,13 @@ import { siteConfig } from '@/lib/config';
 
 export default function CTA() {
   return (
-    <section className="py-20 bg-gradient-to-r from-primary-500 to-accent-600">
+    <section className="py-20 bg-gradient-to-br from-primary-600 via-primary-700 to-accent-700">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
             Besoin d&apos;un site vitrine ?
           </h2>
-          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Décrivez-moi votre projet en quelques lignes. 
             Je vous réponds sous 24h avec un devis clair.
           </p>

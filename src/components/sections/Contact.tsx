@@ -46,7 +46,7 @@ export default function Contact() {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-primary-100 rounded-full text-primary-700 font-medium text-sm mb-4">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-primary-100 to-accent-100 rounded-full text-primary-700 font-medium text-sm mb-4 border border-primary-200/50">
             Contact
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 mb-4">

@@ -28,7 +28,7 @@ export default function About() {
           <div className="relative">
             {/* Main image placeholder */}
             <div className="relative aspect-[4/5] max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-accent-500 rounded-2xl shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-500 via-primary-600 to-accent-600 rounded-2xl shadow-xl">
                 {/* Placeholder - remplace par ta photo */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-white text-center">
@@ -41,8 +41,8 @@ export default function About() {
               </div>
 
               {/* Decorative elements */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary-200 rounded-2xl -z-10" />
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary-100 rounded-2xl -z-10" />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent-200/50 rounded-2xl -z-10" />
+              <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary-200/50 rounded-2xl -z-10" />
             </div>
 
             {/* Highlights cards */}
@@ -66,7 +66,7 @@ export default function About() {
 
           {/* Content side */}
           <div className="lg:pl-8 mt-16 lg:mt-0">
-            <span className="inline-block px-4 py-2 bg-primary-100 rounded-full text-primary-700 font-medium text-sm mb-4">
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-primary-100 to-accent-100 rounded-full text-primary-700 font-medium text-sm mb-4 border border-primary-200/50">
               À propos
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-secondary-900 mb-6">

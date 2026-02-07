@@ -47,9 +47,9 @@ export default function Benefits() {
             return (
               <div
                 key={index}
-                className="bg-secondary-50 rounded-2xl p-6 text-center hover:bg-primary-50 transition-colors"
+                className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 border border-secondary-100"
               >
-                <div className="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 bg-gradient-to-br from-primary-100 to-accent-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Icon className="w-7 h-7 text-primary-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-secondary-900 mb-2">

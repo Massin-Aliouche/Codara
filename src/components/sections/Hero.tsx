@@ -6,15 +6,15 @@ export default function Hero() {
     <section id="accueil" className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-200 rounded-full blur-3xl opacity-30 animate-float" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-300 rounded-full blur-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-primary-50 to-transparent opacity-50" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-300/40 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-300/30 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-primary-100/50 to-transparent" />
       </div>
 
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 rounded-full text-primary-700 font-medium text-sm mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-100 to-accent-100 rounded-full text-primary-700 font-medium text-sm mb-6 border border-primary-200/50">
             <Rocket className="w-4 h-4" />
             Livré en 3 à 5 jours
           </div>
