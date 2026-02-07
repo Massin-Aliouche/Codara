@@ -2,6 +2,7 @@ import { Header, Footer } from "@/components/layout";
 import {
   Hero,
   Benefits,
+  MicroFAQ,
   Pricing,
   Process,
   About,
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <Hero />
         <Benefits />
+        <MicroFAQ />
         <Pricing />
         <Process />
         <About />

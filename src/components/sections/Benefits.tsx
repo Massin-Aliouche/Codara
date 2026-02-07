@@ -1,37 +1,52 @@
 'use client';
 
-import { Zap, Shield, Key, MessageCircle } from 'lucide-react';
-import { benefits } from '@/lib/config';
-
-const iconMap: Record<string, React.ElementType> = {
-  Zap,
-  Shield,
-  Key,
-  MessageCircle,
-};
+import { Search, Heart, Zap, MapPin } from 'lucide-react';
 
 export default function Benefits() {
+  const benefits = [
+    {
+      icon: Search,
+      title: 'Trouvable sur Google',
+      description: 'Vos futurs clients vous trouvent facilement quand ils cherchent un pro comme vous.',
+    },
+    {
+      icon: Heart,
+      title: 'Inspire confiance',
+      description: 'Un site soigné, c\'est une première impression qui donne envie de vous appeler.',
+    },
+    {
+      icon: Zap,
+      title: 'Livré rapidement',
+      description: 'Pas besoin d\'attendre des mois. Votre site est prêt en 3 à 5 jours.',
+    },
+    {
+      icon: MapPin,
+      title: 'Basé en France',
+      description: 'Un vrai interlocuteur, joignable, qui parle votre langue et comprend vos besoins.',
+    },
+  ];
+
   return (
-    <section className="section-padding bg-white">
+    <section className="py-16 bg-white">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
-            Pourquoi travailler avec moi ?
+          <h2 className="text-2xl sm:text-3xl font-bold text-secondary-900 mb-4">
+            Un site qui travaille pour vous
           </h2>
           <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
-            Pas d&apos;agence, pas de process compliqué. Juste un freelance 
-            réactif qui fait le job.
+            Plus d&apos;appels, plus de demandes, plus de crédibilité. 
+            Votre site devient votre meilleur commercial.
           </p>
         </div>
 
         {/* Benefits Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {benefits.map((benefit) => {
-            const Icon = iconMap[benefit.icon] || Zap;
+          {benefits.map((benefit, index) => {
+            const Icon = benefit.icon;
             return (
               <div
-                key={benefit.id}
+                key={index}
                 className="bg-secondary-50 rounded-2xl p-6 text-center hover:bg-primary-50 transition-colors"
               >
                 <div className="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mx-auto mb-4">
