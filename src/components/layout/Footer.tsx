@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, MapPin, Linkedin, Github } from 'lucide-react';
 import { siteConfig } from '@/lib/config';
 
@@ -11,11 +12,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">C</span>
-              </div>
-              <span className="text-xl font-bold">{siteConfig.name}</span>
+            <div className="mb-4">
+              <Image
+                src="/Codara/Codara%20logo.png"
+                alt="Codara"
+                width={120}
+                height={35}
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-secondary-400 mb-6">
               Sites vitrines professionnels pour artisans et indépendants.
