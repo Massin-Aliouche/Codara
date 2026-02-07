@@ -56,7 +56,7 @@ export default function Portfolio() {
               className="group bg-white rounded-2xl overflow-hidden shadow-lg border border-secondary-100 card-hover"
             >
               {/* Image */}
-              <div className="relative h-48 bg-gradient-to-br from-primary-100 to-primary-200 overflow-hidden">
+              <div className="relative h-48 bg-gradient-to-br from-primary-100 to-accent-100 overflow-hidden">
                 {/* Placeholder - remplace par tes vraies images */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-primary-400 text-6xl font-bold opacity-30">

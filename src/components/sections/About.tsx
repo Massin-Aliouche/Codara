@@ -28,7 +28,7 @@ export default function About() {
           <div className="relative">
             {/* Main image placeholder */}
             <div className="relative aspect-[4/5] max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-primary-600 rounded-2xl shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 to-accent-500 rounded-2xl shadow-xl">
                 {/* Placeholder - remplace par ta photo */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-white text-center">

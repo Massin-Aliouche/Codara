@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  icons: {
+    icon: '/Codara/Codara%20logo.png',
+    apple: '/Codara/Codara%20logo.png',
+  },
   keywords: [
     "création site web",
     "développeur web",

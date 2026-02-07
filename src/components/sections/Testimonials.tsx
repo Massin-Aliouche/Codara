@@ -56,7 +56,7 @@ export default function Testimonials() {
               {/* Author */}
               <div className="flex items-center gap-4">
                 {/* Avatar placeholder */}
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white font-semibold">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-accent-500 rounded-full flex items-center justify-center text-white font-semibold">
                   {testimonial.name.split(' ').map(n => n[0]).join('')}
                 </div>
                 <div>

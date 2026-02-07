@@ -4,7 +4,7 @@ import { siteConfig } from '@/lib/config';
 
 export default function CTA() {
   return (
-    <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-700">
+    <section className="py-20 bg-gradient-to-r from-primary-500 to-accent-600">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
