@@ -122,16 +122,6 @@ export const options = [
     price: "80",
     description: "Ajout d'une page à votre site",
   },
-  {
-    name: "Maintenance mensuelle",
-    price: "50/mois",
-    description: "Mises à jour, modifications mineures, support prioritaire",
-  },
-  {
-    name: "Rédaction des textes",
-    price: "150",
-    description: "Je rédige les contenus de votre site",
-  },
 ];
 
 // Portfolio - À remplir avec tes vrais projets plus tard
