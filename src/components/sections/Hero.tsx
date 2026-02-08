@@ -16,10 +16,10 @@ export default function Hero() {
           </div>
 
           {/* Title */}
-          <h1 className="hero-title text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Un site pro pour votre activité,{' '}
-            <span className="gradient-text">prêt cette semaine</span>
-          </h1>
+            <h1 className="hero-title text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              Un site pro pour votre activité,{" "}
+              <span className="gradient-text">livré en quelques jours</span>
+            </h1>
 
           {/* Subtitle */}
           <p className="hero-subtitle text-lg sm:text-xl mb-8 max-w-2xl mx-auto">
