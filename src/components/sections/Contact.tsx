@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 import { Send, Mail, Loader2 } from 'lucide-react';
 import { siteConfig } from '@/lib/config';
 import { Button, Input, Textarea } from '@/components/ui';
@@ -26,19 +27,36 @@ export default function Contact() {
     e.preventDefault();
     setIsLoading(true);
 
-    // Simulate form submission
-    // TODO: Intégrer avec un service email (EmailJS, Resend, etc.)
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    toast.success('Message envoyé ! Je vous réponds sous 24h.');
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-      budget: '',
-    });
-    setIsLoading(false);
+    // EmailJS integration
+    emailjs
+      .send(
+        'YOUR_SERVICE_ID', // à remplacer par ton service ID
+        'YOUR_TEMPLATE_ID', // à remplacer par ton template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          plan: formData.budget,
+        },
+        'YOUR_USER_ID' // à remplacer par ton user/public key
+      )
+      .then(
+        () => {
+          toast.success('Message envoyé ! Je vous réponds sous 24h.');
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+            budget: '',
+          });
+        },
+        () => {
+          toast.error('Erreur lors de l\'envoi. Réessayez ou contactez-moi directement.');
+        }
+      )
+      .finally(() => setIsLoading(false));
   };
 
   return (
