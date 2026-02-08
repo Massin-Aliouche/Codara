@@ -27,14 +27,14 @@ export default function Benefits() {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-[var(--bg)]">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-secondary-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[var(--text)] mb-4">
             Un site qui travaille pour vous
           </h2>
-          <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--text-muted)] max-w-2xl mx-auto">
             Plus d&apos;appels, plus de demandes, plus de crédibilité. 
             Votre site devient votre meilleur commercial.
           </p>
@@ -47,15 +47,15 @@ export default function Benefits() {
             return (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 border border-secondary-100"
+                className="bg-[var(--surface)] rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 border border-[var(--border)]"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-primary-100 to-accent-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                   <Icon className="w-7 h-7 text-primary-500" />
                 </div>
-                <h3 className="text-lg font-semibold text-secondary-900 mb-2">
+                <h3 className="text-lg font-semibold text-[var(--text)] mb-2">
                   {benefit.title}
                 </h3>
-                <p className="text-secondary-600 text-sm">
+                <p className="text-[var(--text-muted)] text-sm">
                   {benefit.description}
                 </p>
               </div>

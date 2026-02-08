@@ -21,7 +21,7 @@ export default function About() {
   ];
 
   return (
-    <section id="a-propos" className="section-padding bg-secondary-50">
+    <section id="a-propos" className="section-padding bg-[var(--bg)]">
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image side */}
@@ -52,10 +52,10 @@ export default function About() {
                 return (
                   <div
                     key={item.title}
-                    className="bg-white p-4 rounded-xl shadow-lg border border-secondary-100 text-center"
+                    className="bg-[var(--surface)] p-4 rounded-xl shadow-lg border border-[var(--border)] text-center"
                   >
-                    <Icon className="w-6 h-6 text-primary-600 mx-auto mb-2" />
-                    <p className="font-semibold text-secondary-900 text-sm">
+                    <Icon className="w-6 h-6 text-[var(--primary)] mx-auto mb-2" />
+                    <p className="font-semibold text-[var(--text)] text-sm">
                       {item.title}
                     </p>
                   </div>
@@ -66,14 +66,14 @@ export default function About() {
 
           {/* Content side */}
           <div className="lg:pl-8 mt-16 lg:mt-0">
-            <span className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-secondary-700 font-medium text-sm mb-4 border border-secondary-200 shadow-sm">
+            <span className="inline-block px-4 py-2 bg-[var(--surface)] backdrop-blur-sm rounded-full text-[var(--text-muted)] font-medium text-sm mb-4 border border-[var(--border)] shadow-sm">
               À propos
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-secondary-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-[var(--text)] mb-6">
               Salut, moi c&apos;est{' '}
               <span className="gradient-text">Massin</span> 👋
             </h2>
-            <div className="space-y-4 text-secondary-600 mb-8">
+            <div className="space-y-4 text-[var(--text-muted)] mb-8">
               <p>
                 Je suis développeur web freelance. Je crée des sites vitrines 
                 pour les indépendants et petites entreprises qui veulent une 

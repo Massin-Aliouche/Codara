@@ -19,14 +19,14 @@ export default function Portfolio() {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-secondary-700 font-medium text-sm mb-4 border border-secondary-200 shadow-sm">
+          <span className="inline-block px-4 py-2 bg-[var(--surface)] backdrop-blur-sm rounded-full text-[var(--text-muted)] font-medium text-sm mb-4 border border-[var(--border)] shadow-sm">
             Portfolio
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--text)] mb-4">
             Mes dernières{' '}
             <span className="gradient-text">réalisations</span>
           </h2>
-          <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--text-muted)] max-w-2xl mx-auto">
             Découvrez quelques-uns des projets que j&apos;ai réalisés pour mes clients.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function Portfolio() {
               className={`px-5 py-2 rounded-full font-medium text-sm transition-all duration-200 ${
                 activeCategory === category
                   ? 'bg-gradient-to-r from-primary-500 to-accent-500 text-white shadow-lg shadow-accent-500/25'
-                  : 'bg-secondary-100 text-secondary-600 hover:bg-secondary-200'
+                  : 'bg-[var(--surface)] text-[var(--text-muted)] hover:bg-[var(--surface-hover)]'
               }`}
             >
               {category}
@@ -53,7 +53,7 @@ export default function Portfolio() {
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="group bg-white rounded-2xl overflow-hidden shadow-lg border border-secondary-100 card-hover"
+              className="group bg-[var(--surface)] rounded-2xl overflow-hidden shadow-lg border border-[var(--border)] card-hover"
             >
               {/* Image */}
               <div className="relative h-48 bg-gradient-to-br from-secondary-100 to-primary-50 overflow-hidden">
@@ -82,17 +82,17 @@ export default function Portfolio() {
                 <Badge variant="primary" className="mb-3">
                   {project.category}
                 </Badge>
-                <h3 className="text-xl font-semibold text-secondary-900 mb-2">
+                <h3 className="text-xl font-semibold text-[var(--text)] mb-2">
                   {project.title}
                 </h3>
-                <p className="text-secondary-600 mb-4">
+                <p className="text-[var(--text-muted)] mb-4">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-2 py-1 bg-secondary-100 text-secondary-600 text-xs rounded"
+                      className="px-2 py-1 bg-[var(--bg)] text-[var(--text-muted)] text-xs rounded"
                     >
                       {tag}
                     </span>

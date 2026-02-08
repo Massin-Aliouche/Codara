@@ -42,18 +42,18 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding bg-secondary-50">
+    <section id="contact" className="section-padding bg-[var(--bg)]">
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-secondary-700 font-medium text-sm mb-4 border border-secondary-200 shadow-sm">
+          <span className="inline-block px-4 py-2 bg-[var(--surface)] backdrop-blur-sm rounded-full text-[var(--text-muted)] font-medium text-sm mb-4 border border-[var(--border)] shadow-sm">
             Contact
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--text)] mb-4">
             Décrivez-moi votre{' '}
             <span className="gradient-text">projet</span>
           </h2>
-          <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--text-muted)] max-w-2xl mx-auto">
             En quelques lignes, dites-moi ce dont vous avez besoin. 
             Je vous réponds sous 24h avec un devis clair.
           </p>
@@ -62,33 +62,33 @@ export default function Contact() {
         <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="lg:col-span-1 space-y-6">
-            <div className="bg-white p-6 rounded-2xl shadow-lg border border-secondary-100">
-              <h3 className="text-xl font-semibold text-secondary-900 mb-6">
+            <div className="bg-[var(--surface)] p-6 rounded-2xl shadow-lg border border-[var(--border)]">
+              <h3 className="text-xl font-semibold text-[var(--text)] mb-6">
                 Comment ça se passe ?
               </h3>
               
               <div className="space-y-4">
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-secondary-50">
-                  <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary-600 font-semibold text-sm">1</span>
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-[var(--bg)]">
+                  <div className="w-8 h-8 bg-[var(--primary)]/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-[var(--primary)] font-semibold text-sm">1</span>
                   </div>
-                  <p className="text-secondary-700 text-sm">
+                  <p className="text-[var(--text-muted)] text-sm">
                     Vous me décrivez votre projet via le formulaire
                   </p>
                 </div>
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-secondary-50">
-                  <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary-600 font-semibold text-sm">2</span>
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-[var(--bg)]">
+                  <div className="w-8 h-8 bg-[var(--primary)]/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-[var(--primary)] font-semibold text-sm">2</span>
                   </div>
-                  <p className="text-secondary-700 text-sm">
+                  <p className="text-[var(--text-muted)] text-sm">
                     Je vous réponds sous 24h avec un devis détaillé
                   </p>
                 </div>
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-secondary-50">
-                  <div className="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-primary-600 font-semibold text-sm">3</span>
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-[var(--bg)]">
+                  <div className="w-8 h-8 bg-[var(--primary)]/20 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-[var(--primary)] font-semibold text-sm">3</span>
                   </div>
-                  <p className="text-secondary-700 text-sm">
+                  <p className="text-[var(--text-muted)] text-sm">
                     On échange si besoin, puis on démarre !
                   </p>
                 </div>
@@ -114,7 +114,7 @@ export default function Contact() {
           <div className="lg:col-span-2">
             <form
               onSubmit={handleSubmit}
-              className="bg-white p-8 rounded-2xl shadow-lg border border-secondary-100"
+              className="bg-[var(--surface)] p-8 rounded-2xl shadow-lg border border-[var(--border)]"
             >
               <div className="grid sm:grid-cols-2 gap-6 mb-6">
                 <Input
@@ -142,7 +142,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="budget"
-                    className="block text-sm font-medium text-secondary-700 mb-2"
+                    className="block text-sm font-medium text-[var(--text-muted)] mb-2"
                   >
                     Budget estimé
                   </label>
@@ -201,7 +201,7 @@ export default function Contact() {
                 )}
               </Button>
 
-              <p className="text-sm text-secondary-500 text-center mt-4">
+              <p className="text-sm text-[var(--text-subtle)] text-center mt-4">
                 En soumettant ce formulaire, vous acceptez d&apos;être contacté 
                 concernant votre projet.
               </p>

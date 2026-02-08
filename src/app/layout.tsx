@@ -57,7 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} font-sans antialiased bg-[var(--bg)] text-[var(--text)]`}>
         {children}
         <Toaster 
           position="bottom-right"

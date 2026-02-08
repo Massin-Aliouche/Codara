@@ -12,14 +12,14 @@ export default function Testimonials() {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-secondary-700 font-medium text-sm mb-4 border border-secondary-200 shadow-sm">
+          <span className="inline-block px-4 py-2 bg-[var(--surface)] backdrop-blur-sm rounded-full text-[var(--text-muted)] font-medium text-sm mb-4 border border-[var(--border)] shadow-sm">
             Témoignages
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-secondary-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--text)] mb-4">
             Ce que disent{' '}
             <span className="gradient-text">mes clients</span>
           </h2>
-          <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--text-muted)] max-w-2xl mx-auto">
             La satisfaction de mes clients est ma priorité. Voici ce qu&apos;ils pensent de notre collaboration.
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white rounded-2xl p-8 shadow-lg border border-secondary-100 relative card-hover"
+              className="bg-[var(--surface)] rounded-2xl p-8 shadow-lg border border-[var(--border)] relative card-hover"
             >
               {/* Quote icon */}
               <div className="absolute -top-4 left-8">
@@ -49,7 +49,7 @@ export default function Testimonials() {
               </div>
 
               {/* Content */}
-              <p className="text-secondary-700 mb-6 italic">
+              <p className="text-[var(--text-muted)] mb-6 italic">
                 &ldquo;{testimonial.content}&rdquo;
               </p>
 
@@ -60,10 +60,10 @@ export default function Testimonials() {
                   {testimonial.name.split(' ').map(n => n[0]).join('')}
                 </div>
                 <div>
-                  <p className="font-semibold text-secondary-900">
+                  <p className="font-semibold text-[var(--text)]">
                     {testimonial.name}
                   </p>
-                  <p className="text-sm text-secondary-500">
+                  <p className="text-sm text-[var(--text-subtle)]">
                     {testimonial.role}
                   </p>
                 </div>
