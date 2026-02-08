@@ -124,7 +124,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder="Jean Dupont"
+                  placeholder="Nom Prénom"
                 />
                 <Input
                   label="Email *"
@@ -134,7 +134,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="jean@exemple.fr"
+                  placeholder="mail@exemple.com"
                 />
               </div>
 
@@ -144,7 +144,7 @@ export default function Contact() {
                     htmlFor="budget"
                     className="block text-sm font-medium text-[var(--text-muted)] mb-2"
                   >
-                    Budget estimé
+                    Plan souhaité
                   </label>
                   <select
                     id="budget"
@@ -154,10 +154,9 @@ export default function Contact() {
                     className="input-field"
                   >
                     <option value="">Sélectionnez...</option>
-                    <option value="< 1000€">&lt; 1 000€</option>
-                    <option value="1000-2000€">1 000€ - 2 000€</option>
-                    <option value="2000-5000€">2 000€ - 5 000€</option>
-                    <option value="> 5000€">&gt; 5 000€</option>
+                    <option value="Site 1 page">Site 1 page</option>
+                    <option value="Site vitrine">Site vitrine</option>
+                    <option value="Clé en main">Clé en main</option>
                   </select>
                 </div>
               </div>
