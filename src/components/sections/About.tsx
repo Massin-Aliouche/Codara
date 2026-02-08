@@ -32,10 +32,15 @@ export default function About() {
                 {/* Placeholder - remplace par ta photo */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-white text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
-                      <span className="text-6xl">👨‍💻</span>
+                    <div className="w-32 h-32 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center overflow-hidden">
+                      <img
+                        src="/Codara/C%20logo.png"
+                        alt="Logo Codara"
+                        className="w-24 h-24 object-contain"
+                        draggable="false"
+                      />
                     </div>
-                    <p className="text-sm opacity-70">Ajoute ta photo ici</p>
+                    <p className="text-sm opacity-70">Logo Codara</p>
                   </div>
                 </div>
               </div>
