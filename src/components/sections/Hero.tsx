@@ -56,7 +56,7 @@ export default function Hero() {
 
           {/* Reassurance line */}
           <p className="hero-reassurance text-sm">
-            Réponse sous 24h · Satisfait ou retouché · Paiement en 2 fois possible
+            Réponse sous 48h · Satisfait ou retouché · Paiement en 2 fois possible
           </p>
         </div>
       </div>
