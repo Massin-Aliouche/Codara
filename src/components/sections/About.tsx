@@ -80,19 +80,13 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-[var(--text-muted)] mb-8">
               <p>
-                Je suis développeur web freelance. Je crée des sites vitrines 
-                pour les indépendants et petites entreprises qui veulent une 
-                présence en ligne simple et efficace.
+                Passionné et étudiant en informatique, j&apos;aime diversifier mes activités en créant des sites vitrines pour les indépendants et petites entreprises qui veulent une présence en ligne simple et efficace.
               </p>
               <p>
-                Mon truc ? Aller à l&apos;essentiel. Pas de process compliqué, 
-                pas de réunions interminables. On échange, je comprends ce dont 
-                vous avez besoin, et je vous livre un site qui vous ressemble.
+                Mon truc ? Aller à l&apos;essentiel. Pas de process compliqué, pas de réunions interminables. On échange, je comprends votre besoin, et je vous livre un site qui vous ressemble.
               </p>
               <p>
-                Vous récupérez le code source, vous en faites ce que vous voulez. 
-                Ou alors je m&apos;occupe de tout (hébergement, mise en ligne) si 
-                vous préférez ne pas vous en soucier.
+                Vous récupérez le code source, vous en faites ce que vous voulez. Ou bien je m&apos;occupe de tout (hébergement, mise en ligne) si vous préférez ne pas vous en soucier.
               </p>
             </div>
 
