@@ -12,7 +12,7 @@ export default function Hero() {
           {/* Badge */}
           <div className="hero-badge mb-6">
             <Rocket className="w-4 h-4" />
-            Livré en 3 à 5 jours
+            Livré en 3 à 7 jours
           </div>
 
           {/* Title */}

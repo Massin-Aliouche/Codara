@@ -17,7 +17,7 @@ export default function Benefits() {
     {
       icon: Zap,
       title: 'Livré rapidement',
-      description: 'Pas besoin d\'attendre des mois. Votre site est prêt en 3 à 5 jours.',
+      description: 'Pas besoin d\'attendre des mois. Votre site est prêt en 3 à 7 jours.',
     },
     {
       icon: MapPin,

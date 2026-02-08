@@ -8,7 +8,7 @@ export default function MicroFAQ() {
 
   const faqs = [
     {
-      question: "C'est vraiment livré en 3-5 jours ?",
+      question: "C'est vraiment livré en 3-7 jours ?",
       answer: "Oui, pour un site vitrine standard (1 à 5 pages). La seule condition : que vous me fournissiez vos contenus (textes, photos) rapidement. Si vous n'avez pas tout, on en discute.",
     },
     {

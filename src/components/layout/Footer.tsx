@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
             <p className="text-secondary-400 mb-6">
               Sites vitrines professionnels pour artisans et indépendants.
-              Livrés en 3 à 5 jours.
+              Livrés en 3 à 7 jours.
             </p>
             <div className="flex gap-4">
               <a
