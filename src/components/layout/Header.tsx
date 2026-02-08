@@ -37,9 +37,9 @@ export default function Header() {
             <Image
               src="/Codara/Codara%20logo.png"
               alt="Codara"
-              width={160}
-              height={45}
-              className="h-12 w-auto logo-balanced"
+              width={190}
+              height={54}
+              className="h-14 w-auto logo-balanced"
               priority
             />
           </Link>
