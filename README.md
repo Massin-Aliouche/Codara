@@ -117,10 +117,9 @@ Headers HTTP configurés dans `next.config.mjs` :
 
 ## 🚀 Déploiement
 
-Le site est actuellement déployé sur **GitHub Pages** via GitHub Actions.
+Le site est déployé sur **GitHub Pages** via GitHub Actions.
 
 ### Autres options
-- Vercel (recommandé pour Next.js)
 - Netlify
 - Railway
 

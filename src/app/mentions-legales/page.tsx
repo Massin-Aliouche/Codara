@@ -51,9 +51,9 @@ export default function MentionsLegales() {
                   Ce site est hébergé par :
                 </p>
                 <ul className="list-disc list-inside text-[var(--text-muted)] space-y-2">
-                  <li>Hébergeur : Vercel Inc.</li>
-                  <li>Adresse : 340 S Lemon Ave #4133, Walnut, CA 91789, USA</li>
-                  <li>Site web : https://vercel.com</li>
+                  <li>Hébergeur : GitHub, Inc.</li>
+                  <li>Adresse : 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA</li>
+                  <li>Site web : https://github.com</li>
                 </ul>
               </section>
 
