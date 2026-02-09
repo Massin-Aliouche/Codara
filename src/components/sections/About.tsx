@@ -27,15 +27,15 @@ export default function About() {
           {/* Image side */}
           <div className="relative">
             {/* Main image placeholder */}
-            <div className="relative aspect-square max-w-sm mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 rounded-3xl shadow-xl">
+            <div className="relative aspect-square max-w-md mx-auto">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 rounded-full shadow-2xl">
                 {/* Logo centré */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-48 h-48 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                  <div className="w-64 h-64 bg-white/25 rounded-full flex items-center justify-center backdrop-blur-sm shadow-inner border border-white/30">
                     <img
                       src="/Codara/C%20logo.png"
                       alt="Logo Codara"
-                      className="w-36 h-36 object-contain"
+                      className="w-52 h-52 object-contain drop-shadow-lg"
                       draggable="false"
                     />
                   </div>
@@ -43,8 +43,8 @@ export default function About() {
               </div>
 
               {/* Decorative elements */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent-100 rounded-2xl -z-10" />
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary-100 rounded-2xl -z-10" />
+              <div className="absolute -bottom-4 -right-4 w-28 h-28 bg-accent-200/50 rounded-full -z-10 blur-sm" />
+              <div className="absolute -top-4 -left-4 w-20 h-20 bg-primary-200/50 rounded-full -z-10 blur-sm" />
             </div>
 
             {/* Highlights cards */}
