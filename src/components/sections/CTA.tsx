@@ -12,7 +12,7 @@ export default function CTA() {
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Décrivez-moi votre projet en quelques lignes. 
-            Je vous réponds sous 24h avec un devis clair.
+            Je vous réponds sous 48h avec un devis clair.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button

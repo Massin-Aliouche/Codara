@@ -34,7 +34,7 @@ export default function Contact() {
 
     // Anti-spam: honeypot check
     if (honeypot) {
-      toast.success('Message envoyé ! Je vous réponds sous 24h.');
+      toast.success('Message envoyé ! Je vous réponds sous 48h.');
       return;
     }
 
@@ -77,7 +77,7 @@ export default function Contact() {
       .send(serviceId, templateId, sanitizedData, userId)
       .then(
         () => {
-          toast.success('Message envoyé ! Je vous réponds sous 24h.');
+          toast.success('Message envoyé ! Je vous réponds sous 48h.');
           setFormData({
             name: '',
             email: '',
@@ -107,7 +107,7 @@ export default function Contact() {
           </h2>
           <p className="text-lg text-[var(--text-muted)] max-w-2xl mx-auto">
             En quelques lignes, dites-moi ce dont vous avez besoin. 
-            Je vous réponds sous 24h avec un devis clair.
+            Je vous réponds sous 48h avec un devis clair.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export default function Contact() {
                     <span className="text-[var(--primary)] font-semibold text-sm">2</span>
                   </div>
                   <p className="text-[var(--text-muted)] text-sm">
-                    Je vous réponds sous 24h avec un devis détaillé
+                    Je vous réponds sous 48h avec un devis détaillé
                   </p>
                 </div>
                 <div className="flex items-start gap-4 p-4 rounded-xl bg-[var(--bg)]">
