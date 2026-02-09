@@ -26,20 +26,23 @@ export default function MentionsLegales() {
               Mentions Légales
             </h1>
 
+            <p className="text-[var(--text-muted)] mb-8">
+              Conformément aux dispositions de la loi n°2004-575 du 21 juin 2004 pour la confiance 
+              dans l&apos;économie numérique (LCEN), il est précisé aux utilisateurs du site Codara 
+              l&apos;identité des différents intervenants dans le cadre de sa réalisation et de son suivi.
+            </p>
+
             <div className="prose prose-secondary max-w-none">
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-[var(--text)] mb-4">
                   1. Éditeur du site
                 </h2>
-                <p className="text-[var(--text-muted)] mb-4">
-                  Le site {siteConfig.name} est édité par :
-                </p>
                 <ul className="list-disc list-inside text-[var(--text-muted)] space-y-2">
-                  <li>Nom : [Votre nom complet]</li>
-                  <li>Statut : [Auto-entrepreneur / SARL / etc.]</li>
-                  <li>SIRET : [Votre numéro SIRET]</li>
-                  <li>Adresse : [Votre adresse]</li>
-                  <li>Email : {siteConfig.contact.email}</li>
+                  <li>Nom du site : Codara</li>
+                  <li>Statut juridique : Activité en cours de création</li>
+                  <li>Responsable de la publication : Massin Aliouche</li>
+                  <li>Localisation : France</li>
+                  <li>Adresse e-mail : {siteConfig.contact.email}</li>
                 </ul>
               </section>
 
@@ -48,12 +51,13 @@ export default function MentionsLegales() {
                   2. Hébergement
                 </h2>
                 <p className="text-[var(--text-muted)] mb-4">
-                  Ce site est hébergé par :
+                  Le site est hébergé par :
                 </p>
                 <ul className="list-disc list-inside text-[var(--text-muted)] space-y-2">
-                  <li>Hébergeur : GitHub, Inc.</li>
-                  <li>Adresse : 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA</li>
-                  <li>Site web : https://github.com</li>
+                  <li>GitHub Pages</li>
+                  <li>Société : GitHub, Inc.</li>
+                  <li>Adresse : 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</li>
+                  <li>Site web : <a href="https://pages.github.com" className="text-[var(--primary)] hover:underline" target="_blank" rel="noopener noreferrer">https://pages.github.com</a></li>
                 </ul>
               </section>
 
@@ -62,10 +66,12 @@ export default function MentionsLegales() {
                   3. Propriété intellectuelle
                 </h2>
                 <p className="text-[var(--text-muted)] mb-4">
-                  L&apos;ensemble du contenu de ce site (textes, images, vidéos, logos, 
-                  etc.) est protégé par le droit d&apos;auteur. Toute reproduction, 
-                  représentation, modification ou adaptation, totale ou partielle, 
-                  est strictement interdite sans autorisation préalable écrite.
+                  L&apos;ensemble des contenus présents sur le site Codara (textes, graphismes, logo, 
+                  éléments visuels, structure du site, code source) est protégé par le droit d&apos;auteur.
+                </p>
+                <p className="text-[var(--text-muted)]">
+                  Toute reproduction, représentation, modification ou exploitation, totale ou partielle, 
+                  du contenu du site sans autorisation préalable est interdite.
                 </p>
               </section>
 
@@ -73,20 +79,39 @@ export default function MentionsLegales() {
                 <h2 className="text-2xl font-semibold text-[var(--text)] mb-4">
                   4. Responsabilité
                 </h2>
-                <p className="text-[var(--text-muted)] mb-4">
-                  L&apos;éditeur s&apos;efforce de fournir des informations aussi précises 
-                  que possible. Toutefois, il ne pourra être tenu responsable des 
-                  omissions, des inexactitudes ou des carences dans la mise à jour.
+                <p className="text-[var(--text-muted)]">
+                  L&apos;éditeur du site s&apos;efforce de fournir des informations aussi précises que possible. 
+                  Toutefois, il ne pourra être tenu responsable des omissions, des inexactitudes ou des 
+                  carences dans la mise à jour, qu&apos;elles soient de son fait ou du fait de tiers partenaires.
                 </p>
               </section>
 
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-[var(--text)] mb-4">
-                  5. Contact
+                  5. Données personnelles
+                </h2>
+                <p className="text-[var(--text-muted)] mb-4">
+                  Le site Codara peut collecter des données personnelles via son formulaire de contact 
+                  (nom, adresse e-mail, message).
+                </p>
+                <p className="text-[var(--text-muted)] mb-4">
+                  Ces données sont utilisées uniquement pour répondre aux demandes envoyées via le 
+                  formulaire de contact. Elles ne sont ni vendues, ni cédées, ni transmises à des tiers.
+                </p>
+                <p className="text-[var(--text-muted)]">
+                  Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez 
+                  d&apos;un droit d&apos;accès, de rectification et de suppression des données vous concernant. 
+                  Pour exercer ce droit, vous pouvez contacter : {siteConfig.contact.email}
+                </p>
+              </section>
+
+              <section className="mb-8">
+                <h2 className="text-2xl font-semibold text-[var(--text)] mb-4">
+                  6. Cookies
                 </h2>
                 <p className="text-[var(--text-muted)]">
-                  Pour toute question concernant ces mentions légales, vous pouvez 
-                  nous contacter à l&apos;adresse suivante : {siteConfig.contact.email}
+                  Le site Codara n&apos;utilise aucun cookie à des fins de suivi, de mesure d&apos;audience 
+                  ou de publicité.
                 </p>
               </section>
             </div>
