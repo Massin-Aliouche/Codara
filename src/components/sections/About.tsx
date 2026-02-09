@@ -31,14 +31,12 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 rounded-full shadow-2xl">
                 {/* Logo centré */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-64 h-64 bg-white/25 rounded-full flex items-center justify-center backdrop-blur-sm shadow-inner border border-white/30">
-                    <img
-                      src="/Codara/C%20logo.png"
-                      alt="Logo Codara"
-                      className="w-52 h-52 object-contain drop-shadow-lg"
-                      draggable="false"
-                    />
-                  </div>
+                  <img
+                    src="/Codara/C%20logo-circle.png"
+                    alt="Logo Codara"
+                    className="w-72 h-72 object-contain drop-shadow-xl rounded-full"
+                    draggable="false"
+                  />
                 </div>
               </div>
 
