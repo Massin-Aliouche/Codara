@@ -86,8 +86,9 @@ export default function Contact() {
             budget: '',
           });
         },
-        () => {
-          toast.error('Erreur lors de l\'envoi. Réessayez ou contactez-moi directement.');
+        (error) => {
+          console.error('EmailJS Error:', error);
+          toast.error(`Erreur: ${error?.text || 'Réessayez ou contactez-moi directement.'}`);
         }
       )
       .finally(() => setIsLoading(false));
