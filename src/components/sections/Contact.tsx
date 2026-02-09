@@ -68,10 +68,10 @@ export default function Contact() {
       plan: sanitizeInput(formData.budget),
     };
 
-    // EmailJS integration - utilise des variables d'environnement
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID';
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID';
-    const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID || 'YOUR_USER_ID';
+    // EmailJS integration - clés publiques (exposées côté client)
+    const serviceId = 'service_gr20wya';
+    const templateId = 'template_c73ee0w';
+    const userId = '02yMCF8Ze8dbGy_Lm';
 
     emailjs
       .send(serviceId, templateId, sanitizedData, userId)

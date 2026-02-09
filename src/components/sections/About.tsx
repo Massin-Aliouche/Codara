@@ -27,15 +27,15 @@ export default function About() {
           {/* Image side */}
           <div className="relative">
             {/* Main image placeholder */}
-            <div className="relative aspect-[4/5] max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 rounded-2xl shadow-xl">
+            <div className="relative aspect-square max-w-sm mx-auto">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 rounded-3xl shadow-xl">
                 {/* Logo centré */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-40 h-40 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                  <div className="w-48 h-48 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                     <img
                       src="/Codara/C%20logo.png"
                       alt="Logo Codara"
-                      className="w-28 h-28 object-contain"
+                      className="w-36 h-36 object-contain"
                       draggable="false"
                     />
                   </div>
