@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: '/Codara/C%20logo.png',
-    apple: '/Codara/C%20logo.png',
+    icon: '/Codara/C%20logo-circle.png',
+    apple: '/Codara/C%20logo-circle.png',
   },
   keywords: [
     "création site web",
