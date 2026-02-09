@@ -44,7 +44,7 @@ export default function Hero() {
           </ul>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button size="lg" href="#contact">
               Recevoir un devis gratuit
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -53,6 +53,19 @@ export default function Hero() {
               Voir les offres
             </Button>
           </div>
+
+          {/* Portfolio link */}
+          <p className="text-sm text-[var(--text-muted)] mb-10">
+            Vous voulez voir un exemple de ce que je sais faire ?{' '}
+            <a
+              href="https://massinaliouche.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--primary)] hover:underline transition-colors"
+            >
+              Découvrir mon portfolio →
+            </a>
+          </p>
 
           {/* Reassurance line */}
           <p className="hero-reassurance text-sm">
