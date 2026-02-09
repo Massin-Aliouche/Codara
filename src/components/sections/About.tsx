@@ -29,18 +29,15 @@ export default function About() {
             {/* Main image placeholder */}
             <div className="relative aspect-[4/5] max-w-md mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 rounded-2xl shadow-xl">
-                {/* Placeholder - remplace par ta photo */}
+                {/* Logo centré */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center overflow-hidden">
-                      <img
-                        src="/Codara/C%20logo.png"
-                        alt="Logo Codara"
-                        className="w-24 h-24 object-contain"
-                        draggable="false"
-                      />
-                    </div>
-                    <p className="text-sm opacity-70">Logo Codara</p>
+                  <div className="w-40 h-40 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                    <img
+                      src="/Codara/C%20logo.png"
+                      alt="Logo Codara"
+                      className="w-28 h-28 object-contain"
+                      draggable="false"
+                    />
                   </div>
                 </div>
               </div>
