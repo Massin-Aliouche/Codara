@@ -1,14 +1,20 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { Send, Mail, Loader2 } from 'lucide-react';
 import { siteConfig } from '@/lib/config';
 import { Button, Input, Textarea } from '@/components/ui';
 import toast from 'react-hot-toast';
 
+// Validation helpers
+const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+const sanitizeInput = (input: string) => input.trim().slice(0, 1000);
+
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
+  const [honeypot, setHoneypot] = useState(''); // Anti-spam honeypot
+  const lastSubmitTime = useRef<number>(0);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,22 +31,50 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsLoading(true);
 
-    // EmailJS integration
+    // Anti-spam: honeypot check
+    if (honeypot) {
+      toast.success('Message envoyé ! Je vous réponds sous 24h.');
+      return;
+    }
+
+    // Rate limiting: 30 seconds between submissions
+    const now = Date.now();
+    if (now - lastSubmitTime.current < 30000) {
+      toast.error('Veuillez patienter avant de renvoyer un message.');
+      return;
+    }
+
+    // Input validation
+    if (!isValidEmail(formData.email)) {
+      toast.error('Veuillez entrer une adresse email valide.');
+      return;
+    }
+
+    if (formData.name.length < 2 || formData.message.length < 10) {
+      toast.error('Veuillez remplir tous les champs correctement.');
+      return;
+    }
+
+    setIsLoading(true);
+    lastSubmitTime.current = now;
+
+    // Sanitize inputs
+    const sanitizedData = {
+      name: sanitizeInput(formData.name),
+      email: sanitizeInput(formData.email),
+      subject: sanitizeInput(formData.subject),
+      message: sanitizeInput(formData.message),
+      plan: sanitizeInput(formData.budget),
+    };
+
+    // EmailJS integration - utilise des variables d'environnement
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID';
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID';
+    const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID || 'YOUR_USER_ID';
+
     emailjs
-      .send(
-        'YOUR_SERVICE_ID', // à remplacer par ton service ID
-        'YOUR_TEMPLATE_ID', // à remplacer par ton template ID
-        {
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-          plan: formData.budget,
-        },
-        'YOUR_USER_ID' // à remplacer par ton user/public key
-      )
+      .send(serviceId, templateId, sanitizedData, userId)
       .then(
         () => {
           toast.success('Message envoyé ! Je vous réponds sous 24h.');
@@ -134,6 +168,17 @@ export default function Contact() {
               onSubmit={handleSubmit}
               className="bg-[var(--surface)] p-8 rounded-2xl shadow-lg border border-[var(--border)]"
             >
+              {/* Honeypot anti-spam field - invisible to users */}
+              <input
+                type="text"
+                name="website"
+                value={honeypot}
+                onChange={(e) => setHoneypot(e.target.value)}
+                className="absolute -left-[9999px] opacity-0 pointer-events-none"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+              />
               <div className="grid sm:grid-cols-2 gap-6 mb-6">
                 <Input
                   label="Nom complet *"
