@@ -80,11 +80,40 @@ colors: {
 
 ## 📧 Formulaire de Contact
 
-Le formulaire est prêt mais nécessite une intégration backend. Options :
+Le formulaire utilise **EmailJS** pour l'envoi d'emails.
 
-- **EmailJS** - Simple, gratuit jusqu'à 200 emails/mois
-- **Resend** - API moderne, gratuit jusqu'à 3000 emails/mois
-- **Formspree** - Pas de code backend nécessaire
+### Configuration
+
+1. Crée un compte sur [EmailJS](https://www.emailjs.com/)
+2. Crée un service email et un template
+3. Copie `.env.example` en `.env.local` :
+   ```bash
+   cp .env.example .env.local
+   ```
+4. Remplis tes identifiants :
+   ```
+   NEXT_PUBLIC_EMAILJS_SERVICE_ID=ton_service_id
+   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=ton_template_id
+   NEXT_PUBLIC_EMAILJS_USER_ID=ta_cle_publique
+   ```
+
+### Sécurité du formulaire
+
+- ✅ Champ honeypot anti-spam
+- ✅ Rate limiting (30s entre soumissions)
+- ✅ Validation email côté client
+- ✅ Sanitisation des entrées
+
+## 🔒 Sécurité
+
+Headers HTTP configurés dans `next.config.mjs` :
+
+- `Strict-Transport-Security` (HSTS)
+- `X-Content-Type-Options: nosniff`
+- `X-Frame-Options: SAMEORIGIN`
+- `X-XSS-Protection`
+- `Referrer-Policy`
+- `Permissions-Policy`
 
 ## 🚀 Déploiement
 
@@ -126,8 +155,9 @@ src/
 - [x] Modifier les informations de contact
 - [x] Personnaliser les tarifs
 - [x] Adapter la FAQ
+- [x] Intégrer le formulaire de contact avec EmailJS
+- [x] Ajouter les headers de sécurité HTTP
 - [ ] Compléter les mentions légales (SIRET, etc.)
-- [ ] Intégrer le formulaire de contact avec un service email
 - [ ] Ajouter ta photo dans la section "À propos"
 - [ ] Ajouter Google Analytics (optionnel)
 
