@@ -161,7 +161,7 @@ export const faq = [
   },
   {
     question: "Je peux demander des modifications après ?",
-    answer: "Oui. Une modification est incluse après livraison (offre Site vitrine). Ensuite, les modifications sont facturées à l'heure ou via un forfait maintenance mensuel.",
+    answer: "Oui. 1 à 2 retouches incluses selon la formule choisie. Ensuite, les modifications sont facturées à l'heure ou via un forfait maintenance mensuel.",
   },
   {
     question: "Mon site sera visible sur Google ?",

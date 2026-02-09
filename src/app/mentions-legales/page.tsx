@@ -41,7 +41,7 @@ export default function MentionsLegales() {
                   <li>Nom du site : Codara</li>
                   <li>Statut juridique : Activité en cours de création</li>
                   <li>Responsable de la publication : Massin Aliouche</li>
-                  <li>Localisation : France</li>
+                  <li>Localisation : France (activité en cours de création)</li>
                   <li>Adresse e-mail : {siteConfig.contact.email}</li>
                 </ul>
               </section>

@@ -5,7 +5,7 @@ import { ExternalLink } from 'lucide-react';
 import { portfolio } from '@/lib/config';
 import { Badge } from '@/components/ui';
 
-const categories = ['Tous', 'Site Vitrine', 'E-commerce', 'Application Web'];
+const categories = ['Tous', 'Site Vitrine'];
 
 export default function Portfolio() {
   const [activeCategory, setActiveCategory] = useState('Tous');
