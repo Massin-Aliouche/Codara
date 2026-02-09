@@ -189,6 +189,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="Nom Prénom"
+                  autoComplete="name"
                 />
                 <Input
                   label="Email *"
@@ -199,6 +200,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="mail@exemple.com"
+                  autoComplete="email"
                 />
               </div>
 
