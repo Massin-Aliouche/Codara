@@ -38,9 +38,9 @@ export default function Contact() {
       return;
     }
 
-    // Rate limiting: 30 seconds between submissions
+    // Rate limiting: 10 seconds between submissions
     const now = Date.now();
-    if (now - lastSubmitTime.current < 30000) {
+    if (now - lastSubmitTime.current < 10000) {
       toast.error('Veuillez patienter avant de renvoyer un message.');
       return;
     }
@@ -51,8 +51,13 @@ export default function Contact() {
       return;
     }
 
-    if (formData.name.length < 2 || formData.message.length < 10) {
-      toast.error('Veuillez remplir tous les champs correctement.');
+    if (formData.name.trim().length < 2) {
+      toast.error('Veuillez entrer votre nom (minimum 2 caractères).');
+      return;
+    }
+
+    if (formData.message.trim().length < 5) {
+      toast.error('Veuillez écrire un message (minimum 5 caractères).');
       return;
     }
 
