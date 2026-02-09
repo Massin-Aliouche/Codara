@@ -28,16 +28,14 @@ export default function About() {
           <div className="relative">
             {/* Main image placeholder */}
             <div className="relative aspect-square max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-400 via-primary-500 to-accent-500 rounded-full shadow-2xl">
-                {/* Logo centré */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <img
-                    src="/Codara/C%20logo-circle.png"
-                    alt="Logo Codara"
-                    className="w-72 h-72 object-contain drop-shadow-xl rounded-full"
-                    draggable="false"
-                  />
-                </div>
+              <div className="absolute inset-0 rounded-full shadow-2xl overflow-hidden">
+                {/* Logo qui remplit tout */}
+                <img
+                  src="/Codara/C%20logo-circle.png"
+                  alt="Logo Codara"
+                  className="w-full h-full object-cover"
+                  draggable="false"
+                />
               </div>
 
               {/* Decorative elements */}
