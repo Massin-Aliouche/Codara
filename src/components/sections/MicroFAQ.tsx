@@ -13,7 +13,7 @@ export default function MicroFAQ() {
     },
     {
       question: "Je récupère quoi exactement ?",
-      answer: "Vous recevez le code source complet de votre site. Il vous appartient. Vous pouvez l'héberger où vous voulez, le modifier, le faire évoluer. Si vous préférez ne pas vous en occuper, je peux gérer la mise en ligne pour vous (option à 150€).",
+      answer: "Vous recevez le code source complet de votre site. Il vous appartient. Vous pouvez l'héberger où vous voulez, le modifier, le faire évoluer. Si vous préférez ne pas vous en occuper, je peux gérer la mise en ligne sur votre hébergement (option à 150€) ou tout inclure avec l'offre Clé en main.",
     },
     {
       question: "C'est pour moi ce service ?",

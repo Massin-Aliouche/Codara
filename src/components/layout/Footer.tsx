@@ -66,26 +66,21 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4">Offres</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#services" className="text-secondary-400 hover:text-white transition-colors">
-                  Site Vitrine
+                <Link href="#tarifs" className="text-secondary-400 hover:text-white transition-colors">
+                  Site 1 page – 390€
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-secondary-400 hover:text-white transition-colors">
-                  Site E-commerce
+                <Link href="#tarifs" className="text-secondary-400 hover:text-white transition-colors">
+                  Site vitrine – 790€
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-secondary-400 hover:text-white transition-colors">
-                  Application Web
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="text-secondary-400 hover:text-white transition-colors">
-                  Refonte de Site
+                <Link href="#tarifs" className="text-secondary-400 hover:text-white transition-colors">
+                  Clé en main – 990€
                 </Link>
               </li>
             </ul>

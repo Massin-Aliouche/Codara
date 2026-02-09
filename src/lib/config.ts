@@ -2,7 +2,7 @@
 export const siteConfig = {
   // Informations de base
   name: "Codara",
-  title: "Codara - Votre site vitrine pro, livré en 7 jours",
+  title: "Codara - Votre site vitrine pro, livré en 3 à 7 jours",
   description: "Vous êtes artisan, coach, thérapeute ou indépendant ? Je crée votre site vitrine professionnel, clé en main, en moins d'une semaine. Simple, efficace, sans jargon.",
   
   // Tes coordonnées
@@ -115,7 +115,7 @@ export const options = [
   {
     name: "Mise en ligne",
     price: "150",
-    description: "Je mets votre site en ligne sur votre hébergement",
+    description: "Je mets votre site en ligne sur votre propre hébergement",
   },
   {
     name: "Page supplémentaire",
@@ -148,8 +148,8 @@ export const testimonials: {
 // FAQ
 export const faq = [
   {
-    question: "C'est vraiment livré en 7 jours ?",
-    answer: "Oui, pour un site vitrine standard. Je travaille vite et bien. La seule condition : que vous me fournissiez vos contenus (textes, photos) rapidement. Si vous n'avez pas tout, je peux vous aider.",
+    question: "C'est vraiment livré en 3-7 jours ?",
+    answer: "Oui, pour un site vitrine standard. Site 1 page : 3-5 jours. Site complet : 5-7 jours. La seule condition : que vous me fournissiez vos contenus (textes, photos) rapidement. Si vous n'avez pas tout, je peux vous aider.",
   },
   {
     question: "Je récupère quoi exactement ?",
@@ -193,7 +193,7 @@ export const process = [
   {
     step: 4,
     title: "Vous validez",
-    description: "Je vous montre le résultat. On ajuste si besoin jusqu'à ce que ça vous plaise.",
+    description: "Je vous montre le résultat. 1-2 retouches incluses selon l'offre choisie.",
   },
   {
     step: 5,
